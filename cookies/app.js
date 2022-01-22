@@ -2,7 +2,7 @@
 var cc = initCookieConsent();
 
 // microsoft logo
-var logo = '<img alt="Logo Notre service" src="images/logo.png" style="width: 23%;">'
+var logo = '<img alt="Logo Notre service" src="images/logo.png" style="width: 23%;margin-left: 41%;">'
 var cookie = '🍪';
 
 // run plugin with config object
