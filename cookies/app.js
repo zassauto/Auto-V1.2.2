@@ -76,7 +76,7 @@ cc.run({
         'en': {
             consent_modal: {
                 title: cookie + 'Le respect de votre vie privée est notre priorité',
-                description: 'Notre site internet et les sociétés partenaires utilisent des cookies. Ces cookies nous permettent de personnaliser votre expérience utilisateur, mesurer l’audience, collecter des statistiques de visite pour l’optimisation de la publicité et l’amélioration des contenus. <br><br>Vous pouvez gérer vos préférences des cookies, accepter ou refuser le dépôt de l’ensemble des cookies. Un lien &quot;Gérer mes cookies&quot; sur notre site vous permet également de modifier vos choix à tout moment.<br> <button type="button" data-cc="c-settings" class="c-bn">Gérer mes préférences</button><br><button type="button" data-cc="accept-all" class="c-bn">Tout accepter</button><br><button type="button" data-cc="accept-necessary" class="c-bn">Tout refuser</button',
+                description: 'Notre site internet et les sociétés partenaires utilisent des cookies. Ces cookies nous permettent de personnaliser votre expérience utilisateur, mesurer l’audience, collecter des statistiques de visite pour l’optimisation de la publicité et l’amélioration des contenus. <br><br>Vous pouvez gérer vos préférences des cookies, accepter ou refuser le dépôt de l’ensemble des cookies. Un lien &quot;Gérer mes cookies&quot; sur notre site vous permet également de modifier vos choix à tout moment.<br> <button type="button" data-cc="c-settings" class="c-bn">Gérer mes préférences</button><br>',
                 primary_btn: {
                     text: 'Accept all',
                     role: 'accept_all'              // 'accept_selected' or 'accept_all'
