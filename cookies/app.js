@@ -78,11 +78,11 @@ cc.run({
                 title: cookie + 'Le respect de votre vie privée est notre priorité',
                 description: 'Notre site internet et les sociétés partenaires utilisent des cookies. Ces cookies nous permettent de personnaliser votre expérience utilisateur, mesurer l’audience, collecter des statistiques de visite pour l’optimisation de la publicité et l’amélioration des contenus. <br><br>Vous pouvez gérer vos préférences des cookies, accepter ou refuser le dépôt de l’ensemble des cookies. Un lien &quot;Gérer mes cookies&quot; sur notre site vous permet également de modifier vos choix à tout moment.<br><br><br> <button type="button" data-cc="c-settings" class="c-bn">Gérer mes préférences</button><br>',
                 primary_btn: {
-                    text: 'Accept all',
+                    text: 'Tout Accepter',
                     role: 'accept_all'              // 'accept_selected' or 'accept_all'
                 },
                 secondary_btn: {
-                    text: 'Reject all',
+                    text: 'Tout Refuser',
                     role: 'accept_necessary'        // 'settings' or 'accept_necessary'
                 }
             },
@@ -107,7 +107,7 @@ cc.run({
                         description: 'Ces cookies nous permettent de réaliser des analyses statistiques de visites et d’audiences afin de mesurer l’attractivité du site et des services proposé',
                         toggle: {
                             value: 'analytics',
-                            enabled: true,
+                            enabled: false,
                             readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
                         }
                     }, {
