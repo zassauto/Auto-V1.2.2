@@ -1,4 +1,21 @@
 <html lang="fr-FR"><head>
+    
+    
+    
+    <!-- Global site tag (gtag.js) - Google AdWords: 1068309516 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1068309516"></script>
+
+
+
+
+<script type="text/plain" data-cookiecategory="ads">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1068309516');
+</script>
+    
+    
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta charset="UTF-8">
     <link media="all" rel="stylesheet" href="css/critical.d489c3c1.css">
@@ -37,7 +54,87 @@
     </style>
 
 <!-- -------------------------------------------------------------------------------------------------------- -->    
+ <script>
+        function doDemoThings(cookie) {
+            disableBtn('btn2');
+            disableBtn('btn3');
 
+            // Delete line below
+            cookie && (document.getElementById('cookie_val').innerHTML = JSON.stringify(cookie, null, 2));
+        }
+
+        function disableBtn(id) {
+            document.getElementById(id).disabled = true;
+            document.getElementById(id).className = 'styled_btn disabled';
+        }
+
+        window.addEventListener && window.addEventListener('load', function () {
+
+            doDemoThings();
+
+            var darkmode = false;
+
+            function toggleDarkmode() {
+                if (!darkmode) {
+                    document.getElementById('theme').innerText = 'dark theme';
+                    document.body.className = 'd_mode c_darkmode';
+                    darkmode = true;
+                } else {
+                    document.getElementById('theme').innerText = 'light theme';
+                    document.body.className = 'd_mode';
+                    darkmode = false;
+                }
+            }
+
+            /*
+            * The following lines of code are for demo purposes (show api functions)
+            */
+            if (document.addEventListener) {
+
+                document.getElementById('btn2').addEventListener('click', function () {
+                    cc.show(0);
+                });
+
+                document.getElementById('btn3').addEventListener('click', function () {
+                    cc.hide();
+                });
+
+                document.getElementById('btn5').addEventListener('click', function () {
+                    cc.showSettings(0);
+                });
+
+                document.getElementById('btn6').addEventListener('click', function () {
+                    toggleDarkmode();
+                });
+            } else {
+                document.getElementById('btn2').attachEvent('onclick', function () {
+                    cc.show(0);
+                });
+
+                document.getElementById('btn3').attachEvent('onclick', function () {
+                    cc.hide();
+                });
+
+                document.getElementById('btn5').attachEvent('onclick', function () {
+                    cc.showSettings(0);
+                });
+
+                document.getElementById('btn6').attachEvent('onclick', function () {
+                    toggleDarkmode();
+                });
+            }
+        });
+    </script>
+	<style>#s-bl table {display: none;}
+	 #s-all-bn {display: none;}
+	#s-rall-bn {display: none;}
+	#c-p-bn {display: none;}
+	#c-s-bn {display: none;}
+		
+		
+	
+	</style>
+    
 </head>
 
 <body class="page-template page-template-page-templates page-template-page-product page-template-page-templatespage-product-php page page-id-5 page-parent template-global " data-template="base.twig">
@@ -483,6 +580,10 @@
             </div>
         </footer>
     </div>
+    
+    
+<script defer src="cookies/src/cookieconsent.js"></script>
+    <script defer src="cookies/app.js"></script>
 
-
+    
 </body></html>
