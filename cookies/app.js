@@ -108,7 +108,7 @@ cc.run({
                         toggle: {
                             value: 'analytics',
                             enabled: false,
-                            readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                            readonly: false          // cookie categories with readonly=true are all treated as "necessary cookies"
                         }
                     }, {
                         title: 'Optimisation des fonctionnalités et personnalisation des services « rajouter les boutons',
