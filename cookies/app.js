@@ -106,7 +106,7 @@ cc.run({
                         title: 'Réalisation de statistiques de visite et d’audience',
                         description: 'Ces cookies nous permettent de réaliser des analyses statistiques de visites et d’audiences afin de mesurer l’attractivité du site et des services proposé',
                         toggle: {
-                            value: 'necessary',
+                            value: 'analytics',
                             enabled: true,
                             readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
                         }
