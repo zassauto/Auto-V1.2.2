@@ -1,0 +1,3519 @@
+<html lang="fr-FR" class="show--consent"><head>
+    
+    
+    
+    <!-- Global site tag (gtag.js) - Google AdWords: 1068309516 -->
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="https://zassauto.github.io/cookies/demo/assets/css/style.css">
+    
+	
+<style id="cc--style" type="text/css">/** Light color-scheme **/
+:root{
+    --cc-bg: #fff;
+    --cc-text: #2d4156;
+    --cc-btn-primary-bg: #2d4156;
+    --cc-btn-primary-text: var(--cc-bg);
+    --cc-btn-primary-hover-bg: #1d2e38;
+    --cc-btn-secondary-bg: #eaeff2;
+    --cc-btn-secondary-text: var(--cc-text);
+    --cc-btn-secondary-hover-bg: #d8e0e6;
+    --cc-toggle-bg-off: #919ea6;
+    --cc-toggle-bg-on: var(--cc-btn-primary-bg);
+    --cc-toggle-bg-readonly: #d5dee2;
+    --cc-toggle-knob-bg: #fff;
+    --cc-toggle-knob-icon-color: #ecf2fa;
+    --cc-block-text: var(--cc-text);
+    --cc-cookie-category-block-bg: #f0f4f7;
+    --cc-cookie-category-block-bg-hover: #e9eff4;
+    --cc-section-border: #f1f3f5;
+    --cc-cookie-table-border: #e9edf2;
+    --cc-overlay-bg: rgba(4, 6, 8, .85);
+    --cc-webkit-scrollbar-bg: #cfd5db;
+    --cc-webkit-scrollbar-bg-hover: #9199a0;
+}
+
+/** Dark color-scheme **/
+.c_darkmode{
+    --cc-bg: #181b1d;
+    --cc-text: #d8e5ea;
+    --cc-btn-primary-bg: #a6c4dd;
+    --cc-btn-primary-text: #000;
+    --cc-btn-primary-hover-bg: #c2dff7;
+    --cc-btn-secondary-bg: #33383c;
+    --cc-btn-secondary-text: var(--cc-text);
+    --cc-btn-secondary-hover-bg: #3e454a;
+    --cc-toggle-bg-off: #667481;
+    --cc-toggle-bg-on: var(--cc-btn-primary-bg);
+    --cc-toggle-bg-readonly: #454c54;
+    --cc-toggle-knob-bg: var(--cc-cookie-category-block-bg);
+    --cc-toggle-knob-icon-color: var(--cc-bg);
+    --cc-block-text: #b3bfc5;
+    --cc-cookie-category-block-bg: #23272a;
+    --cc-cookie-category-block-bg-hover: #2b3035;
+    --cc-section-border: #292d31;
+    --cc-cookie-table-border: #2b3035;
+    --cc-webkit-scrollbar-bg: #667481;
+    --cc-webkit-scrollbar-bg-hover: #9199a0;
+}
+
+.cc_div *,
+.cc_div :before,
+.cc_div :after{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    font-style: inherit;
+    font-variant: normal;
+    font-weight: inherit;
+    font-family: inherit;
+	line-height: 1.2;
+    font-size: 1em;
+    transition: none;
+    animation: none;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    letter-spacing: unset;
+    color: inherit;
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    text-align: left;
+    visibility: unset;
+}
+
+.cc_div {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: #2d4156;
+    color: var(--cc-text);
+}
+
+.cc_div .c-bn,
+.cc_div .b-tl,
+#s-ttl,
+#c-ttl,
+#s-bl td:before{
+    font-weight: 600;
+}
+
+#cm,
+#s-inr,
+.cc_div .c-bl,
+.cc_div .b-tl,
+#s-bl .act .b-acc{
+    border-radius: .35em;
+}
+
+#s-bl .act .b-acc{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cc_div input,
+.cc_div button,
+.cc_div a{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.cc_div a{
+    border-bottom: 1px solid;
+}
+
+.cc_div a:hover{
+    text-decoration: none;
+    border-color: transparent;
+}
+
+/* Make elements "animatable" */
+.c--anim #cm,
+.c--anim #s-cnt,
+.c--anim #s-inr,
+#cs-ov,
+#cm-ov{
+    transition: visibility .25s linear, opacity .25s ease, transform .25s ease!important;
+}
+
+.c--anim .c-bn{
+    transition: background-color .25s ease!important;
+}
+
+/* start transitions */
+.c--anim #cm.bar.slide,
+.c--anim .bar.slide #s-inr{
+    transition: visibility .4s ease, opacity .4s ease, transform .4s ease!important;
+}
+
+.c--anim #cm.bar.slide + #cm-ov,
+.c--anim .bar.slide + #cs-ov{
+    transition: visibility .4s ease, opacity .4s ease, transform .4s ease!important;
+}
+
+#cm.bar.slide,
+.cc_div .bar.slide #s-inr{
+    transform: translateX(100%);
+    opacity: 1;
+}
+
+#cm.bar.top.slide,
+.cc_div .bar.left.slide #s-inr{
+    transform: translateX(-100%);
+    opacity: 1;
+}
+
+#cm.slide,
+.cc_div .slide #s-inr{
+    transform: translateY(1.6em);
+}
+
+#cm.top.slide{
+    transform: translateY(-1.6em);
+}
+
+#cm.bar.slide{
+    transform: translateY(100%);
+}
+
+#cm.bar.top.slide{
+    transform: translateY(-100%);
+}
+/* end transitions */
+
+/* Show modals */
+
+.show--consent .c--anim #cm,
+.show--consent .c--anim #cm.bar,
+.show--settings .c--anim #s-inr,
+.show--settings .c--anim .bar.slide #s-inr{
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible!important;
+}
+
+.show--consent .c--anim #cm.box.middle,
+.show--consent .c--anim #cm.cloud.middle{
+    transform: scale(1) translateY(-50%);
+}
+
+.show--settings .c--anim #s-cnt{
+    visibility: visible!important;
+}
+
+/* Show overlays */
+.force--consent.show--consent .c--anim #cm-ov,
+.show--settings .c--anim #cs-ov{
+    visibility: visible!important;
+    opacity: 1!important;
+}
+
+#cm{
+    font-family: inherit;
+    padding: 1.1em 1.8em 1.4em 1.8em;
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    background: var(--cc-bg);
+    max-width: 24.2em;
+    width: 100%;
+    bottom: 1.250em;
+    right: 1.250em;
+    box-shadow: 0 0.625em 1.875em #000000;
+    box-shadow: 0 0.625em 1.875em rgba(2, 2, 3, 0.28);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.95);
+    line-height: initial;
+}
+
+/** fix https://github.com/orestbida/cookieconsent/issues/94 **/
+#cc_div #cm {
+    display: block!important;
+}
+
+#c-ttl{
+    margin-bottom: .7em;
+    font-size: 1.05em;
+}
+
+.cloud #c-ttl{
+    margin-top: -.15em;
+}
+
+#c-txt{
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.cc_div #c-bns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4em;
+}
+
+.cc_div .c-bn{
+    color: #40505a;
+    color: var(--cc-btn-secondary-text);
+    background: #e5ebef;
+    background: var(--cc-btn-secondary-bg);
+    padding: 1em 1.7em;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.82em;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+    border-radius: 4px;
+    flex: 1;
+}
+
+#c-bns button + button,
+#s-cnt button + button,
+#s-c-bn{
+    float: right;
+    margin-left: 1em;
+}
+
+#s-cnt #s-rall-bn{
+    float: none;
+}
+
+#cm .c_link:hover,
+#cm .c_link:active,
+#s-cnt button + button:hover,
+#s-cnt button + button:active,
+#s-c-bn:active,
+#s-c-bn:hover{
+    background: #d8e0e6;
+    background: var(--cc-btn-secondary-hover-bg);
+}
+
+/**
+CookieConsent settings modal
+**/
+#s-cnt{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    display: table;
+    height: 100%;
+    visibility: hidden;
+}
+
+#s-bl{
+    outline: none;
+}
+
+#s-bl .title{
+    margin-top: 1.4em;
+}
+
+#s-bl .title:first-child{
+    margin-top: 0;
+}
+
+#s-bl .b-bn{
+    margin-top: 0;
+}
+
+#s-bl .b-acc .p{
+    margin-top: 0;
+    padding: 1em;
+}
+
+#s-cnt .b-bn .b-tl{
+    display: block;
+    font-family: inherit;
+    font-size: .95em;
+    width: 100%;
+    position: relative;
+    padding: 1.3em 6.4em 1.3em 2.7em;
+    background: none;
+    transition: background-color .25s ease;
+}
+
+#s-cnt .b-bn .b-tl.exp{
+    cursor: pointer;
+}
+
+#s-cnt .act .b-bn .b-tl{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#s-cnt .b-bn .b-tl:active,
+#s-cnt .b-bn .b-tl:hover{
+    background: #e9eff4;
+    background: var(--cc-cookie-category-block-bg-hover);
+}
+
+#s-bl .b-bn{
+    position: relative;
+}
+
+#s-bl .c-bl{
+    padding: 1em;
+    margin-bottom: .5em;
+    border: 1px solid #f1f3f5;
+    border-color: var(--cc-section-border);
+    transition: background-color .25s ease;
+}
+
+#s-bl .c-bl:hover{
+    background: #f0f4f7;
+    background: var(--cc-cookie-category-block-bg);
+}
+
+#s-bl .c-bl:last-child{
+    margin-bottom: .5em;
+}
+
+#s-bl .c-bl:first-child{
+    transition: none;
+    padding: 0;
+    margin-top: 0;
+    border:none;
+    margin-bottom: 2em;
+}
+
+#s-bl .c-bl:not(.b-ex):first-child:hover{
+    background: transparent;
+    background: unset;
+}
+
+#s-bl .c-bl.b-ex{
+    padding: 0;
+    border: none;
+    background: #f0f4f7;
+    background: var(--cc-cookie-category-block-bg);
+    transition: none;
+}
+
+#s-bl .c-bl.b-ex + .c-bl{
+    margin-top: 2em;
+}
+
+#s-bl .c-bl.b-ex + .c-bl.b-ex{
+    margin-top: 0;
+}
+
+#s-bl .c-bl.b-ex:first-child{
+    margin-bottom: 1em;
+}
+
+#s-bl .c-bl.b-ex:first-child{
+    margin-bottom: .5em;
+}
+
+#s-bl .b-acc{
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    margin-bottom: 0;
+    display: none;
+}
+
+#s-bl .act .b-acc{
+    max-height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+#s-cnt .p{
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-top: .85em;
+    color: #2d4156;
+    color: var(--cc-block-text);
+}
+
+.cc_div .b-tg .c-tgl:disabled{
+    cursor: not-allowed;
+}
+
+#c-vln{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+#cs{
+    padding: 0 1.7em;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+#s-inr{
+    height: 100%;
+    position: relative;
+    max-width: 45em;
+    margin: 0 auto;
+    transform: scale(.96);
+    opacity: 0;
+    padding-top: 4.75em;
+    padding-bottom: 4.75em;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    box-shadow: rgba(3, 6, 9, .26) 0px 13px 27px -5px;
+}
+
+#s-inr,
+#s-hdr,
+#s-bns{
+    background: #fff;
+    background: var(--cc-bg);
+}
+
+#s-bl{
+	overflow-y: auto;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 1.3em 2.1em;
+    display: block;
+    width: 100%;
+}
+
+#s-bns{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 2.1em;
+    border-top: 1px solid #f1f3f5;
+    border-color: var(--cc-section-border);
+    height: 4.75em;
+}
+
+.cc_div .cc-link{
+    color: #253b48;
+    color: var(--cc-btn-primary-bg);
+    border-bottom: 1px solid #253b48;
+    border-color: var(--cc-btn-primary-bg);
+    display: inline;
+    padding-bottom: 0;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cc_div .cc-link:hover,
+.cc_div .cc-link:active{
+    border-color: transparent;
+}
+
+#c-bns button:first-child,
+#s-bns button:first-child{
+    color: #fff;
+    color: var(--cc-btn-primary-text);
+    background: #253b48;
+    background: var(--cc-btn-primary-bg);
+}
+
+#c-bns.swap button:first-child{
+    color: #40505a;
+    color: var(--cc-btn-secondary-text);
+    background: #e5ebef;
+    background: var(--cc-btn-secondary-bg);
+}
+
+#c-bns.swap button:last-child{
+    color: #fff;
+    color: var(--cc-btn-primary-text);
+    background: #253b48;
+    background: var(--cc-btn-primary-bg);
+}
+
+.cc_div .b-tg .c-tgl:checked ~ .c-tg{
+    background: #253b48;
+    background: var(--cc-toggle-bg-on);
+}
+
+#c-bns button:first-child:active,
+#c-bns button:first-child:hover,
+#s-bns button:first-child:active,
+#s-bns button:first-child:hover,
+#c-bns.swap button:last-child:active,
+#c-bns.swap button:last-child:hover{
+    background: #1d2e38;
+    background: var(--cc-btn-primary-hover-bg);
+}
+
+#c-bns.swap button:first-child:active,
+#c-bns.swap button:first-child:hover{
+    background: #d8e0e6;
+    background: var(--cc-btn-secondary-hover-bg);
+}
+
+#s-hdr{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: table;
+    padding: 0 2.1em;
+    height: 4.75em;
+    vertical-align: middle;
+    z-index: 2;
+    border-bottom: 1px solid #f1f3f5;
+    border-color: var(--cc-section-border);
+}
+
+#s-ttl{
+	display: table-cell;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+#s-c-bn{
+    padding: 0;
+    width: 1.7em;
+    height: 1.7em;
+    font-size: 1.45em;
+    margin: 0;
+    font-weight: initial;
+    position: relative;
+}
+
+#s-c-bnc{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cc_div span.t-lb {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#c_policy__text{
+    height: 31.250em;
+    overflow-y: auto;
+    margin-top: 1.250em;
+}
+
+#c-s-in{
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 100%;
+    height: calc(100% - 2.5em);
+    max-height: 37.5em;
+}
+
+@media screen and (min-width: 688px) {
+    /** works only on webkit-based browsers **/
+    #s-bl::-webkit-scrollbar{
+        width: .9em;
+        height: 100%;
+        background: transparent;
+        border-radius: 0 0.250em 0.250em 0;
+    }
+    
+    #s-bl::-webkit-scrollbar-thumb{
+        border: 0.25em solid var(--cc-bg);
+        background: #cfd5db;
+        background: var(--cc-webkit-scrollbar-bg);
+        border-radius: 100em;
+    }
+
+    #s-bl::-webkit-scrollbar-thumb:hover{
+        background: #9199a0;
+        background: var(--cc-webkit-scrollbar-bg-hover);
+    }
+
+    #s-bl::-webkit-scrollbar-button {
+        width: 10px;
+        height: 5px;
+    }
+}
+
+/** custom checkbox **/
+/* The container */
+.cc_div .b-tg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    margin: auto;
+    right: 1.2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+    vertical-align: middle;
+}
+
+/* Hide the browser's default checkbox */
+.cc_div .b-tg .c-tgl {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Create a custom checkbox */
+.cc_div .b-tg .c-tg {
+    position: absolute;
+    background: #919ea6;
+    background: var(--cc-toggle-bg-off);
+    transition: background-color .25s ease, box-shadow .25s ease;
+    pointer-events: none;
+}
+
+.cc_div span.t-lb,
+.cc_div .b-tg,
+.cc_div .b-tg .c-tg,
+.cc_div .b-tg .c-tgl{
+    width: 3.4em;
+    height: 1.5em;
+    border-radius: 4em;
+}
+
+.cc_div .b-tg .c-tg.c-ro{
+    cursor: not-allowed;
+}
+
+.cc_div .b-tg .c-tgl ~ .c-tg.c-ro{
+    background: #d5dee2;
+    background: var(--cc-toggle-bg-readonly);
+}
+
+.cc_div .b-tg .c-tgl ~ .c-tg.c-ro:after{
+    box-shadow: none;
+}
+
+/* Style the checkmark/indicator */
+.cc_div .b-tg .c-tg:after {
+    content: "";
+    position: relative;
+    display: block;
+    left: 0.125em;
+    top: 0.125em;
+    width: 1.25em;
+    height: 1.25em;
+    border: none;
+    box-sizing: content-box;
+    background: #fff;
+    background: var(--cc-toggle-knob-bg);
+    box-shadow: 0 1px 2px rgba(24, 32, 35, .36);
+    transition: transform .25s ease;
+    border-radius: 100%;
+}
+
+/* Show the checkmark when checked */
+.cc_div .b-tg .c-tgl:checked ~ .c-tg:after{
+    transform: translateX(1.9em);
+}
+
+#s-bl table,
+#s-bl th,
+#s-bl td{
+    border: none;
+}
+
+#s-bl tbody tr{
+    transition: background-color .25s ease;
+}
+
+#s-bl tbody tr:hover{
+    background: #e9eff4;
+    background: var(--cc-cookie-category-block-bg-hover);
+}
+
+#s-bl table { 
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#s-bl td, 
+#s-bl th { 
+    padding: 0.8em 0.625em;
+    text-align: left;
+    vertical-align: top;
+    font-size: .8em;
+    padding-left: 1.2em;
+}
+
+#s-bl th { 
+	font-family: inherit;
+    padding: 1.2em 1.2em;
+}
+
+#s-bl thead tr:first-child{
+    border-bottom: 1px solid #e9edf2;
+    border-color: var(--cc-cookie-table-border);
+}
+
+.force--consent #s-cnt,
+.force--consent #cs{
+    width: 100vw;
+}
+
+#cm-ov,
+#cs-ov{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: #070707;
+    background: rgba(4, 6, 8, .85);
+    background: var(--cc-overlay-bg);
+    display: none;
+    transition: none;
+}
+
+.show--settings #cs-ov,
+.c--anim #cs-ov,
+.force--consent .c--anim #cm-ov,
+.force--consent.show--consent #cm-ov{
+    display: block;
+}
+
+#cs-ov{
+    z-index: 2;
+}
+
+.force--consent .cc_div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100vw;
+    visibility: hidden;
+    transition: visibility .25s linear;
+}
+
+.force--consent.show--consent .c--anim .cc_div,
+.force--consent.show--settings .c--anim .cc_div{
+    visibility: visible;
+}
+
+.force--consent #cm{
+    position: absolute;
+}
+
+.force--consent #cm.bar{
+    width: 100vw;
+    max-width: 100vw;
+}
+
+html.force--consent.show--consent{
+    overflow-y: hidden!important;
+}
+
+html.force--consent.show--consent,
+html.force--consent.show--consent body{
+    height: auto!important;
+    overflow-x: hidden!important;
+}
+/** END BLOCK PAGE SCROLL */
+
+/** BEGIN ICONS **/
+.cc_div .b-bn .exp::before,
+.cc_div .act .b-bn .exp::before{
+    border: solid #2d4156;
+    border-color: var(--cc-btn-secondary-text);
+    border-width: 0 2px 2px 0;
+    padding: .2em;
+    display: inline-block;
+    position: absolute;
+    content: '';
+    margin-right: 15px;
+    position: absolute;
+    transform: translateY(-50%) rotate(45deg);
+    left: 1.2em;
+    top: 50%;
+}
+
+.cc_div .act .b-bn .b-tl::before{
+    transform: translateY(-20%) rotate(225deg);
+}
+
+.cc_div .on-i::before{
+    border: solid #fff;
+    border-color: var(--cc-toggle-knob-icon-color);
+    border-width: 0 2px 2px 0;
+    padding: .1em;
+    display: inline-block;
+    padding-bottom: .45em;
+    content: '';
+    margin: 0 auto;
+    transform: rotate(45deg);
+    top: .37em;
+    left: .75em;
+    position: absolute;
+}
+
+#s-c-bn::before,
+#s-c-bn::after{
+    content: '';
+    position: absolute;
+    left: .82em;
+    top: .58em;
+    height: .6em;
+    width: 1.5px;
+    background: #444d53;
+    background: var(--cc-btn-secondary-text);
+    transform: rotate(45deg);
+    border-radius: 1em;
+    margin: 0 auto;
+}
+
+#s-c-bn::after{
+    transform: rotate(-45deg);
+}
+
+.cc_div .off-i,
+.cc_div .on-i{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    display: block;
+    text-align: center;
+    transition: opacity .15s ease;
+}
+
+.cc_div .on-i{
+    left: 0;
+    opacity: 0;
+}
+
+.cc_div .off-i::before,
+.cc_div .off-i::after{
+    right: .8em;
+    top: .42em;
+    content: ' ';
+    height: .7em;
+    width: .09375em;
+    display: block;
+    background: #cdd6dc;
+    background: var(--cc-toggle-knob-icon-color);
+    margin: 0 auto;
+    position: absolute;
+    transform-origin: center;
+}
+
+.cc_div .off-i::before {
+    transform: rotate(45deg);
+}
+.cc_div .off-i::after {
+    transform: rotate(-45deg);
+}
+
+.cc_div .b-tg .c-tgl:checked ~ .c-tg .on-i{
+    opacity: 1;
+}
+.cc_div .b-tg .c-tgl:checked ~ .c-tg .off-i{
+    opacity: 0;
+}
+/** END ICONS **/
+
+#cm.box.middle,
+#cm.cloud.middle{
+    top: 50%;
+    transform: translateY(-37%);
+    bottom: auto;
+}
+
+#cm.box.middle.zoom,
+#cm.cloud.middle.zoom{
+    transform: scale(.95) translateY(-50%);
+}
+
+#cm.box.center{
+    left: 1em;
+    right: 1em;
+    margin: 0 auto;
+}
+
+/* Start cloud layout */
+#cm.cloud {
+    max-width: 50em;
+    margin: 0 auto;
+    text-align: center;
+    left: 1em;
+    right: 1em;
+    overflow: hidden;
+    padding: 1.3em 2em;
+    width: unset;
+}
+
+.cc_div .cloud #c-inr{
+    display: table;
+    width: 100%;
+}
+
+.cc_div .cloud #c-inr-i{
+    width: 70%;
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 2.4em;
+}
+
+.cc_div .cloud #c-txt{
+    font-size: 0.85em;
+}
+
+.cc_div .cloud #c-bns{
+    min-width: 170px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#cm.cloud .c-bn{
+    margin: .625em 0 0 0;
+    width: 100%;
+}
+
+#cm.cloud .c-bn:first-child{
+    margin: 0;
+}
+
+#cm.cloud.left{
+    margin-right: 1.25em;
+}
+
+#cm.cloud.right{
+    margin-left: 1.25em;
+}
+/* End cloud layout */
+
+/* Start bar layout */
+#cm.bar {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    padding: 2em;
+}
+
+#cm.bar #c-inr{
+    max-width: 32em;
+    margin: 0 auto;
+}
+
+#cm.bar #c-bns{
+    max-width: 33.75em;
+}
+
+#cm.bar #cs{
+    padding: 0;
+}
+
+.cc_div .bar #c-s-in{
+    top: 0;
+    transform: none;
+    height: 100%;
+    max-height: 100%;
+}
+
+.cc_div .bar #s-hdr,
+.cc_div .bar #s-bl,
+.cc_div .bar #s-bns {
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+}
+
+.cc_div .bar #cs{
+    padding: 0;
+}
+
+/* align bar to right by default */
+.cc_div .bar #s-inr{
+    margin: 0;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 0;
+    max-width: 32em;
+}
+
+.cc_div .bar.left #s-inr{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Force table to not be like tables anymore */
+.cc_div .bar #s-bl table, 
+.cc_div .bar #s-bl thead, 
+.cc_div .bar #s-bl tbody, 
+.cc_div .bar #s-bl th, 
+.cc_div .bar #s-bl td, 
+.cc_div .bar #s-bl tr,
+.cc_div .bar #s-cnt{ 
+    display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+.cc_div .bar #s-bl thead tr{ 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.cc_div .bar #s-bl tr{
+    border-top: 1px solid #e3e7ed;
+    border-color: var(--cc-cookie-table-border);
+}
+
+.cc_div .bar #s-bl td { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 35%; 
+}
+
+.cc_div .bar #s-bl td:before { 
+    position: absolute;
+    left: 1em;
+    padding-right: 0.625em;
+    white-space: nowrap;
+    content: attr(data-column);
+    color: #000;
+    color: var(--cc-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* End bar layout */
+
+/* Positions */
+#cm.top {
+    bottom: auto;
+    top: 1.250em;
+}
+
+#cm.left{
+    right: auto;
+    left: 1.250em;
+}
+
+#cm.right{
+    left: auto;
+    right: 1.250em;
+}
+
+#cm.bar.left,
+#cm.bar.right{
+    left: 0;
+    right: 0;
+}
+
+#cm.bar.top{
+    top: 0;
+}
+/* end positions */
+
+@media screen and (max-width: 688px) {
+
+    #cm,
+    #cm.cloud,
+    #cm.left,
+    #cm.right{
+        width: auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 1.4em!important;
+        right: 1em;
+        left: 1em;
+        bottom: 1em;
+        display: block;
+    }
+
+    .force--consent #cm,
+    .force--consent #cm.cloud{
+        width: auto;
+        max-width: 100vw;
+    }
+
+    #cm.top{
+        top: 1em;
+        bottom: auto;
+    }
+
+    #cm.bottom{
+        bottom: 1em;
+        top: auto;
+    }
+
+    #cm.bar.bottom{
+        bottom: 0;
+    }
+
+    #cm.cloud .c-bn{
+        font-size: .85em;
+    }
+
+    #s-bns,
+    .cc_div .bar #s-bns{
+        padding: 1em 1.3em;
+    }
+
+    .cc_div .bar #s-inr{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .cc_div .cloud #c-inr-i{
+        padding-right: 0;
+    }
+
+    #cs{
+        border-radius: 0;
+        padding: 0;
+    }
+
+    #c-s-in{
+        max-height: 100%;
+        height: 100%;
+        top: 0;
+        transform: none;
+    }
+
+    .cc_div .b-tg{
+        transform: scale(1.1);
+        right: 1.1em;
+    }
+
+    #s-inr{
+        margin: 0;
+        padding-bottom: 7.9em;
+        border-radius: 0;
+    }
+
+    #s-bns{
+        height: 7.9em;
+    }
+
+	#s-bl,
+    .cc_div .bar #s-bl{
+		padding: 1.3em;
+    }
+    
+	#s-hdr,
+    .cc_div .bar #s-hdr{
+        padding: 0 1.3em;
+    }
+
+    /** dynamic table layout **/
+    #s-bl table { 
+        width: 100%; 
+    }
+
+    #s-inr.bns-t{
+        padding-bottom: 10.5em;
+    }
+
+    .bns-t #s-bns{
+        height: 10.5em;
+    }
+
+    .cc_div .bns-t .c-bn{
+        font-size: 0.83em;
+        padding: .9em 1.6em;
+    }
+
+    #s-cnt .b-bn .b-tl{
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+    }
+
+    /* Force table to not be like tables anymore */
+    #s-bl table, 
+    #s-bl thead, 
+    #s-bl tbody, 
+    #s-bl th, 
+    #s-bl td, 
+    #s-bl tr,
+    #s-cnt{ 
+        display: block; 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #s-bl thead tr{ 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #s-bl tr{
+        border-top: 1px solid #e3e7ed;
+        border-color: var(--cc-cookie-table-border);
+    }
+
+    #s-bl td { 
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 35%; 
+    }
+
+    #s-bl td:before { 
+        position: absolute;
+        left: 1em;
+        padding-right: 0.625em;
+        white-space: nowrap;
+        content: attr(data-column);
+        color: #000;
+        color: var(--cc-text);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #cm .c-bn,
+    .cc_div .c-bn{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #s-cnt #s-rall-bn{
+        margin-left: 0;
+    }
+
+    .cc_div #c-bns{
+        flex-direction: column;
+    }
+
+    #c-bns button + button,
+    #s-cnt button + button{
+        margin-top: 0.625em;
+        margin-left: 0;
+        float: unset;
+    }
+
+    #cm.cloud,
+    #cm.box{
+        left: 1em;
+        right: 1em;
+        width: auto;
+    }
+
+    #cm.cloud.right,
+    #cm.cloud.left{
+        margin: 0;
+    }
+
+    .cc_div .cloud #c-bns,
+    .cc_div .cloud #c-inr,
+    .cc_div .cloud #c-inr-i{
+        display: block;
+        width: auto;
+        min-width: unset;
+    }
+
+    .cc_div .cloud #c-txt{
+        font-size: .9em;
+    }
+
+    .cc_div .cloud #c-bns{
+        margin-top: 1.625em;
+    }
+}
+
+/* Begin IE fixes */
+.cc_div.ie #c-vln{
+	height: 100%;
+	padding-top: 5.62em;
+}
+
+.cc_div.ie .bar #c-vln{
+    padding-top: 0;
+}
+
+.cc_div.ie #cs{
+    max-height: 37.5em;
+    position: relative;
+	top: 0;
+	margin-top: -5.625em;
+}
+
+.cc_div.ie .bar #cs{
+    margin-top:0;
+    max-height: 100%;
+}
+
+.cc_div.ie #cm{
+    border: 1px solid #dee6e9;
+}
+
+.cc_div.ie #c-s-in{
+    top: 0;
+}
+
+.cc_div.ie .b-tg{
+	padding-left: 1em;
+	margin-bottom: 0.7em;
+}
+
+.cc_div.ie .b-tg .c-tgl:checked ~ .c-tg:after{
+    left: 1.95em;
+}
+
+.cc_div.ie #s-bl table{
+	overflow: auto;
+}
+
+.cc_div.ie .b-tg .c-tg{
+    display: none;
+}
+
+.cc_div.ie .b-tg .c-tgl{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.2em;
+    height: auto;
+}
+
+.cc_div.ie #s-cnt .b-bn .b-tl{
+    padding: 1.3em 6.4em 1.3em 1.4em
+}
+
+.cc_div.ie  .bar #s-bl td:before{
+    display: none;
+}
+
+.cc_div.ie .bar #s-bl td{
+    padding: 0.8em 0.625em 0.8em 1.2em;
+}
+
+.cc_div.ie .bar #s-bl thead tr{
+    position: relative;
+}
+
+.cc_div.ie .b-tg .t-lb{
+    filter: alpha(opacity=0);
+}
+
+.cc_div.ie #cm-ov,
+.cc_div.ie #cs-ov{
+    filter: alpha(opacity=80);
+}
+
+/** END IE FIXES **/</style>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1068309516"></script>
+
+
+
+
+<script type="text/plain" data-cookiecategory="ads">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-1068309516');
+</script>
+    
+    <script>
+        function doDemoThings(cookie) {
+            disableBtn('btn2');
+            disableBtn('btn3');
+
+            // Delete line below
+            cookie && (document.getElementById('cookie_val').innerHTML = JSON.stringify(cookie, null, 2));
+        }
+
+        function disableBtn(id) {
+            document.getElementById(id).disabled = true;
+            document.getElementById(id).className = 'styled_btn disabled';
+        }
+
+        window.addEventListener && window.addEventListener('load', function () {
+
+            doDemoThings();
+
+            var darkmode = false;
+
+            function toggleDarkmode() {
+                if (!darkmode) {
+                    document.getElementById('theme').innerText = 'dark theme';
+                    document.body.className = 'd_mode c_darkmode';
+                    darkmode = true;
+                } else {
+                    document.getElementById('theme').innerText = 'light theme';
+                    document.body.className = 'd_mode';
+                    darkmode = false;
+                }
+            }
+
+            /*
+            * The following lines of code are for demo purposes (show api functions)
+            */
+            if (document.addEventListener) {
+
+                document.getElementById('btn2').addEventListener('click', function () {
+                    cc.show(0);
+                });
+
+                document.getElementById('btn3').addEventListener('click', function () {
+                    cc.hide();
+                });
+
+                document.getElementById('btn5').addEventListener('click', function () {
+                    cc.showSettings(0);
+                });
+
+                document.getElementById('btn6').addEventListener('click', function () {
+                    toggleDarkmode();
+                });
+            } else {
+                document.getElementById('btn2').attachEvent('onclick', function () {
+                    cc.show(0);
+                });
+
+                document.getElementById('btn3').attachEvent('onclick', function () {
+                    cc.hide();
+                });
+
+                document.getElementById('btn5').attachEvent('onclick', function () {
+                    cc.showSettings(0);
+                });
+
+                document.getElementById('btn6').attachEvent('onclick', function () {
+                    toggleDarkmode();
+                });
+            }
+        });
+    </script>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta charset="UTF-8">
+    <link media="all" rel="stylesheet" href="css/critical.d489c3c1.css">
+    <link media="all" rel="stylesheet" href="#">
+    <link media="all" rel="stylesheet" href="css/above.1f2b9d1a.css">
+	 <link media="all" rel="stylesheet" href="cookies/src/cookieconsent.css">
+	
+	
+    <title>Assurance Auto : Comparateur &amp; Devis auto Gratuit Notre service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="theme-color" content="#bfeaf4">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This site is optimized with the Yoast SEO plugin v17.3 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="Jusqu'à 158 € d'économie en comparant les assurances auto ! Obtenez jusqu'75 devis comparés gratuitement et en quelques minutes grâce à notre service">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="index.html">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Assurance Auto : Comparateur &amp; Devis auto Gratuit notre service">
+    <meta property="og:description" content="Jusqu'à 158 € d'économie en comparant les assurances auto ! Obtenez jusqu'75 devis comparés gratuitement et en quelques minutes grâce à notre service !">
+    <meta property="og:url" content="url notre site">
+    <meta property="og:site_name" content="url notre site">
+
+<!-- -------------------------------------------------------------------------------------------------------- -->    
+
+    <style type="text/css">
+        .stars .star:before {
+            color: #bc2a2f !important;
+        }
+        .stars {
+            margin-bottom: 0em !important;
+        }
+        a {
+    color: white !important;
+    text-decoration: none !important;
+}
+    </style>
+
+<!-- -------------------------------------------------------------------------------------------------------- -->    
+ <script>
+        function doDemoThings(cookie) {
+            disableBtn('btn2');
+            disableBtn('btn3');
+
+            // Delete line below
+            cookie && (document.getElementById('cookie_val').innerHTML = JSON.stringify(cookie, null, 2));
+        }
+
+        function disableBtn(id) {
+            document.getElementById(id).disabled = true;
+            document.getElementById(id).className = 'styled_btn disabled';
+        }
+
+        window.addEventListener && window.addEventListener('load', function () {
+
+            doDemoThings();
+
+            var darkmode = false;
+
+            function toggleDarkmode() {
+                if (!darkmode) {
+                    document.getElementById('theme').innerText = 'dark theme';
+                    document.body.className = 'd_mode c_darkmode';
+                    darkmode = true;
+                } else {
+                    document.getElementById('theme').innerText = 'light theme';
+                    document.body.className = 'd_mode';
+                    darkmode = false;
+                }
+            }
+
+            /*
+            * The following lines of code are for demo purposes (show api functions)
+            */
+            if (document.addEventListener) {
+
+                document.getElementById('btn2').addEventListener('click', function () {
+                    cc.show(0);
+                });
+
+                document.getElementById('btn3').addEventListener('click', function () {
+                    cc.hide();
+                });
+
+                document.getElementById('btn5').addEventListener('click', function () {
+                    cc.showSettings(0);
+                });
+
+                document.getElementById('btn6').addEventListener('click', function () {
+                    toggleDarkmode();
+                });
+            } else {
+                document.getElementById('btn2').attachEvent('onclick', function () {
+                    cc.show(0);
+                });
+
+                document.getElementById('btn3').attachEvent('onclick', function () {
+                    cc.hide();
+                });
+
+                document.getElementById('btn5').attachEvent('onclick', function () {
+                    cc.showSettings(0);
+                });
+
+                document.getElementById('btn6').attachEvent('onclick', function () {
+                    toggleDarkmode();
+                });
+            }
+        });
+    </script>
+	<style>#s-bl table {display: none;}
+	 #s-all-bn {display: none;}
+	#s-rall-bn {display: none;}
+	
+		
+		
+	
+	</style>
+    
+<style id="cc--style" type="text/css">/** Light color-scheme **/
+:root{
+    --cc-bg: #fff;
+    --cc-text: #2d4156;
+    --cc-btn-primary-bg: #2d4156;
+    --cc-btn-primary-text: var(--cc-bg);
+    --cc-btn-primary-hover-bg: #1d2e38;
+    --cc-btn-secondary-bg: #eaeff2;
+    --cc-btn-secondary-text: var(--cc-text);
+    --cc-btn-secondary-hover-bg: #d8e0e6;
+    --cc-toggle-bg-off: #919ea6;
+    --cc-toggle-bg-on: var(--cc-btn-primary-bg);
+    --cc-toggle-bg-readonly: #d5dee2;
+    --cc-toggle-knob-bg: #fff;
+    --cc-toggle-knob-icon-color: #ecf2fa;
+    --cc-block-text: var(--cc-text);
+    --cc-cookie-category-block-bg: #f0f4f7;
+    --cc-cookie-category-block-bg-hover: #e9eff4;
+    --cc-section-border: #f1f3f5;
+    --cc-cookie-table-border: #e9edf2;
+    --cc-overlay-bg: rgba(4, 6, 8, .85);
+    --cc-webkit-scrollbar-bg: #cfd5db;
+    --cc-webkit-scrollbar-bg-hover: #9199a0;
+}
+
+/** Dark color-scheme **/
+.c_darkmode{
+    --cc-bg: #181b1d;
+    --cc-text: #d8e5ea;
+    --cc-btn-primary-bg: #a6c4dd;
+    --cc-btn-primary-text: #000;
+    --cc-btn-primary-hover-bg: #c2dff7;
+    --cc-btn-secondary-bg: #33383c;
+    --cc-btn-secondary-text: var(--cc-text);
+    --cc-btn-secondary-hover-bg: #3e454a;
+    --cc-toggle-bg-off: #667481;
+    --cc-toggle-bg-on: var(--cc-btn-primary-bg);
+    --cc-toggle-bg-readonly: #454c54;
+    --cc-toggle-knob-bg: var(--cc-cookie-category-block-bg);
+    --cc-toggle-knob-icon-color: var(--cc-bg);
+    --cc-block-text: #b3bfc5;
+    --cc-cookie-category-block-bg: #23272a;
+    --cc-cookie-category-block-bg-hover: #2b3035;
+    --cc-section-border: #292d31;
+    --cc-cookie-table-border: #2b3035;
+    --cc-webkit-scrollbar-bg: #667481;
+    --cc-webkit-scrollbar-bg-hover: #9199a0;
+}
+
+.cc_div *,
+.cc_div :before,
+.cc_div :after{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    font-style: inherit;
+    font-variant: normal;
+    font-weight: inherit;
+    font-family: inherit;
+	line-height: 1.2;
+    font-size: 1em;
+    transition: none;
+    animation: none;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    letter-spacing: unset;
+    color: inherit;
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    text-align: left;
+    visibility: unset;
+}
+
+.cc_div {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    color: #2d4156;
+    color: var(--cc-text);
+}
+
+.cc_div .c-bn,
+.cc_div .b-tl,
+#s-ttl,
+#c-ttl,
+#s-bl td:before{
+    font-weight: 600;
+}
+
+#cm,
+#s-inr,
+.cc_div .c-bl,
+.cc_div .b-tl,
+#s-bl .act .b-acc{
+    border-radius: .35em;
+}
+
+#s-bl .act .b-acc{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cc_div input,
+.cc_div button,
+.cc_div a{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.cc_div a{
+    border-bottom: 1px solid;
+}
+
+.cc_div a:hover{
+    text-decoration: none;
+    border-color: transparent;
+}
+
+/* Make elements "animatable" */
+.c--anim #cm,
+.c--anim #s-cnt,
+.c--anim #s-inr,
+#cs-ov,
+#cm-ov{
+    transition: visibility .25s linear, opacity .25s ease, transform .25s ease!important;
+}
+
+.c--anim .c-bn{
+    transition: background-color .25s ease!important;
+}
+
+/* start transitions */
+.c--anim #cm.bar.slide,
+.c--anim .bar.slide #s-inr{
+    transition: visibility .4s ease, opacity .4s ease, transform .4s ease!important;
+}
+
+.c--anim #cm.bar.slide + #cm-ov,
+.c--anim .bar.slide + #cs-ov{
+    transition: visibility .4s ease, opacity .4s ease, transform .4s ease!important;
+}
+
+#cm.bar.slide,
+.cc_div .bar.slide #s-inr{
+    transform: translateX(100%);
+    opacity: 1;
+}
+
+#cm.bar.top.slide,
+.cc_div .bar.left.slide #s-inr{
+    transform: translateX(-100%);
+    opacity: 1;
+}
+
+#cm.slide,
+.cc_div .slide #s-inr{
+    transform: translateY(1.6em);
+}
+
+#cm.top.slide{
+    transform: translateY(-1.6em);
+}
+
+#cm.bar.slide{
+    transform: translateY(100%);
+}
+
+#cm.bar.top.slide{
+    transform: translateY(-100%);
+}
+/* end transitions */
+
+/* Show modals */
+
+.show--consent .c--anim #cm,
+.show--consent .c--anim #cm.bar,
+.show--settings .c--anim #s-inr,
+.show--settings .c--anim .bar.slide #s-inr{
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible!important;
+}
+
+.show--consent .c--anim #cm.box.middle,
+.show--consent .c--anim #cm.cloud.middle{
+    transform: scale(1) translateY(-50%);
+}
+
+.show--settings .c--anim #s-cnt{
+    visibility: visible!important;
+}
+
+/* Show overlays */
+.force--consent.show--consent .c--anim #cm-ov,
+.show--settings .c--anim #cs-ov{
+    visibility: visible!important;
+    opacity: 1!important;
+}
+
+#cm{
+    font-family: inherit;
+    padding: 1.1em 1.8em 1.4em 1.8em;
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    background: var(--cc-bg);
+    max-width: 24.2em;
+    width: 100%;
+    bottom: 1.250em;
+    right: 1.250em;
+    box-shadow: 0 0.625em 1.875em #000000;
+    box-shadow: 0 0.625em 1.875em rgba(2, 2, 3, 0.28);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.95);
+    line-height: initial;
+}
+
+/** fix https://github.com/orestbida/cookieconsent/issues/94 **/
+#cc_div #cm {
+    display: block!important;
+}
+
+#c-ttl{
+    margin-bottom: .7em;
+    font-size: 1.05em;
+}
+
+.cloud #c-ttl{
+    margin-top: -.15em;
+}
+
+#c-txt{
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.cc_div #c-bns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4em;
+}
+
+.cc_div .c-bn{
+    color: #40505a;
+    color: var(--cc-btn-secondary-text);
+    background: #e5ebef;
+    background: var(--cc-btn-secondary-bg);
+    padding: 1em 1.7em;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.82em;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+    border-radius: 4px;
+    flex: 1;
+}
+
+#c-bns button + button,
+#s-cnt button + button,
+#s-c-bn{
+    float: right;
+    margin-left: 1em;
+}
+
+#s-cnt #s-rall-bn{
+    float: none;
+}
+
+#cm .c_link:hover,
+#cm .c_link:active,
+#s-cnt button + button:hover,
+#s-cnt button + button:active,
+#s-c-bn:active,
+#s-c-bn:hover{
+    background: #d8e0e6;
+    background: var(--cc-btn-secondary-hover-bg);
+}
+
+/**
+CookieConsent settings modal
+**/
+#s-cnt{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    display: table;
+    height: 100%;
+    visibility: hidden;
+}
+
+#s-bl{
+    outline: none;
+}
+
+#s-bl .title{
+    margin-top: 1.4em;
+}
+
+#s-bl .title:first-child{
+    margin-top: 0;
+}
+
+#s-bl .b-bn{
+    margin-top: 0;
+}
+
+#s-bl .b-acc .p{
+    margin-top: 0;
+    padding: 1em;
+}
+
+#s-cnt .b-bn .b-tl{
+    display: block;
+    font-family: inherit;
+    font-size: .95em;
+    width: 100%;
+    position: relative;
+    padding: 1.3em 6.4em 1.3em 2.7em;
+    background: none;
+    transition: background-color .25s ease;
+}
+
+#s-cnt .b-bn .b-tl.exp{
+    cursor: pointer;
+}
+
+#s-cnt .act .b-bn .b-tl{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#s-cnt .b-bn .b-tl:active,
+#s-cnt .b-bn .b-tl:hover{
+    background: #e9eff4;
+    background: var(--cc-cookie-category-block-bg-hover);
+}
+
+#s-bl .b-bn{
+    position: relative;
+}
+
+#s-bl .c-bl{
+    padding: 1em;
+    margin-bottom: .5em;
+    border: 1px solid #f1f3f5;
+    border-color: var(--cc-section-border);
+    transition: background-color .25s ease;
+}
+
+#s-bl .c-bl:hover{
+    background: #f0f4f7;
+    background: var(--cc-cookie-category-block-bg);
+}
+
+#s-bl .c-bl:last-child{
+    margin-bottom: .5em;
+}
+
+#s-bl .c-bl:first-child{
+    transition: none;
+    padding: 0;
+    margin-top: 0;
+    border:none;
+    margin-bottom: 2em;
+}
+
+#s-bl .c-bl:not(.b-ex):first-child:hover{
+    background: transparent;
+    background: unset;
+}
+
+#s-bl .c-bl.b-ex{
+    padding: 0;
+    border: none;
+    background: #f0f4f7;
+    background: var(--cc-cookie-category-block-bg);
+    transition: none;
+}
+
+#s-bl .c-bl.b-ex + .c-bl{
+    margin-top: 2em;
+}
+
+#s-bl .c-bl.b-ex + .c-bl.b-ex{
+    margin-top: 0;
+}
+
+#s-bl .c-bl.b-ex:first-child{
+    margin-bottom: 1em;
+}
+
+#s-bl .c-bl.b-ex:first-child{
+    margin-bottom: .5em;
+}
+
+#s-bl .b-acc{
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    margin-bottom: 0;
+    display: none;
+}
+
+#s-bl .act .b-acc{
+    max-height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+#s-cnt .p{
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-top: .85em;
+    color: #2d4156;
+    color: var(--cc-block-text);
+}
+
+.cc_div .b-tg .c-tgl:disabled{
+    cursor: not-allowed;
+}
+
+#c-vln{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+#cs{
+    padding: 0 1.7em;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+#s-inr{
+    height: 100%;
+    position: relative;
+    max-width: 45em;
+    margin: 0 auto;
+    transform: scale(.96);
+    opacity: 0;
+    padding-top: 4.75em;
+    padding-bottom: 4.75em;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    box-shadow: rgba(3, 6, 9, .26) 0px 13px 27px -5px;
+}
+
+#s-inr,
+#s-hdr,
+#s-bns{
+    background: #fff;
+    background: var(--cc-bg);
+}
+
+#s-bl{
+	overflow-y: auto;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 1.3em 2.1em;
+    display: block;
+    width: 100%;
+}
+
+#s-bns{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em 2.1em;
+    border-top: 1px solid #f1f3f5;
+    border-color: var(--cc-section-border);
+    height: 4.75em;
+}
+
+.cc_div .cc-link{
+    color: #253b48;
+    color: var(--cc-btn-primary-bg);
+    border-bottom: 1px solid #253b48;
+    border-color: var(--cc-btn-primary-bg);
+    display: inline;
+    padding-bottom: 0;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cc_div .cc-link:hover,
+.cc_div .cc-link:active{
+    border-color: transparent;
+}
+
+#c-bns button:first-child,
+#s-bns button:first-child{
+    color: #fff;
+    color: var(--cc-btn-primary-text);
+    background: #253b48;
+    background: var(--cc-btn-primary-bg);
+}
+
+#c-bns.swap button:first-child{
+    color: #40505a;
+    color: var(--cc-btn-secondary-text);
+    background: #e5ebef;
+    background: var(--cc-btn-secondary-bg);
+}
+
+#c-bns.swap button:last-child{
+    color: #fff;
+    color: var(--cc-btn-primary-text);
+    background: #253b48;
+    background: var(--cc-btn-primary-bg);
+}
+
+.cc_div .b-tg .c-tgl:checked ~ .c-tg{
+    background: #253b48;
+    background: var(--cc-toggle-bg-on);
+}
+
+#c-bns button:first-child:active,
+#c-bns button:first-child:hover,
+#s-bns button:first-child:active,
+#s-bns button:first-child:hover,
+#c-bns.swap button:last-child:active,
+#c-bns.swap button:last-child:hover{
+    background: #1d2e38;
+    background: var(--cc-btn-primary-hover-bg);
+}
+
+#c-bns.swap button:first-child:active,
+#c-bns.swap button:first-child:hover{
+    background: #d8e0e6;
+    background: var(--cc-btn-secondary-hover-bg);
+}
+
+#s-hdr{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: table;
+    padding: 0 2.1em;
+    height: 4.75em;
+    vertical-align: middle;
+    z-index: 2;
+    border-bottom: 1px solid #f1f3f5;
+    border-color: var(--cc-section-border);
+}
+
+#s-ttl{
+	display: table-cell;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+#s-c-bn{
+    padding: 0;
+    width: 1.7em;
+    height: 1.7em;
+    font-size: 1.45em;
+    margin: 0;
+    font-weight: initial;
+    position: relative;
+}
+
+#s-c-bnc{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cc_div span.t-lb {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#c_policy__text{
+    height: 31.250em;
+    overflow-y: auto;
+    margin-top: 1.250em;
+}
+
+#c-s-in{
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 100%;
+    height: calc(100% - 2.5em);
+    max-height: 37.5em;
+}
+
+@media screen and (min-width: 688px) {
+    /** works only on webkit-based browsers **/
+    #s-bl::-webkit-scrollbar{
+        width: .9em;
+        height: 100%;
+        background: transparent;
+        border-radius: 0 0.250em 0.250em 0;
+    }
+    
+    #s-bl::-webkit-scrollbar-thumb{
+        border: 0.25em solid var(--cc-bg);
+        background: #cfd5db;
+        background: var(--cc-webkit-scrollbar-bg);
+        border-radius: 100em;
+    }
+
+    #s-bl::-webkit-scrollbar-thumb:hover{
+        background: #9199a0;
+        background: var(--cc-webkit-scrollbar-bg-hover);
+    }
+
+    #s-bl::-webkit-scrollbar-button {
+        width: 10px;
+        height: 5px;
+    }
+}
+
+/** custom checkbox **/
+/* The container */
+.cc_div .b-tg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    margin: auto;
+    right: 1.2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+    vertical-align: middle;
+}
+
+/* Hide the browser's default checkbox */
+.cc_div .b-tg .c-tgl {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Create a custom checkbox */
+.cc_div .b-tg .c-tg {
+    position: absolute;
+    background: #919ea6;
+    background: var(--cc-toggle-bg-off);
+    transition: background-color .25s ease, box-shadow .25s ease;
+    pointer-events: none;
+}
+
+.cc_div span.t-lb,
+.cc_div .b-tg,
+.cc_div .b-tg .c-tg,
+.cc_div .b-tg .c-tgl{
+    width: 3.4em;
+    height: 1.5em;
+    border-radius: 4em;
+}
+
+.cc_div .b-tg .c-tg.c-ro{
+    cursor: not-allowed;
+}
+
+.cc_div .b-tg .c-tgl ~ .c-tg.c-ro{
+    background: #d5dee2;
+    background: var(--cc-toggle-bg-readonly);
+}
+
+.cc_div .b-tg .c-tgl ~ .c-tg.c-ro:after{
+    box-shadow: none;
+}
+
+/* Style the checkmark/indicator */
+.cc_div .b-tg .c-tg:after {
+    content: "";
+    position: relative;
+    display: block;
+    left: 0.125em;
+    top: 0.125em;
+    width: 1.25em;
+    height: 1.25em;
+    border: none;
+    box-sizing: content-box;
+    background: #fff;
+    background: var(--cc-toggle-knob-bg);
+    box-shadow: 0 1px 2px rgba(24, 32, 35, .36);
+    transition: transform .25s ease;
+    border-radius: 100%;
+}
+
+/* Show the checkmark when checked */
+.cc_div .b-tg .c-tgl:checked ~ .c-tg:after{
+    transform: translateX(1.9em);
+}
+
+#s-bl table,
+#s-bl th,
+#s-bl td{
+    border: none;
+}
+
+#s-bl tbody tr{
+    transition: background-color .25s ease;
+}
+
+#s-bl tbody tr:hover{
+    background: #e9eff4;
+    background: var(--cc-cookie-category-block-bg-hover);
+}
+
+#s-bl table { 
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#s-bl td, 
+#s-bl th { 
+    padding: 0.8em 0.625em;
+    text-align: left;
+    vertical-align: top;
+    font-size: .8em;
+    padding-left: 1.2em;
+}
+
+#s-bl th { 
+	font-family: inherit;
+    padding: 1.2em 1.2em;
+}
+
+#s-bl thead tr:first-child{
+    border-bottom: 1px solid #e9edf2;
+    border-color: var(--cc-cookie-table-border);
+}
+
+.force--consent #s-cnt,
+.force--consent #cs{
+    width: 100vw;
+}
+
+#cm-ov,
+#cs-ov{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: #070707;
+    background: rgba(4, 6, 8, .85);
+    background: var(--cc-overlay-bg);
+    display: none;
+    transition: none;
+}
+
+.show--settings #cs-ov,
+.c--anim #cs-ov,
+.force--consent .c--anim #cm-ov,
+.force--consent.show--consent #cm-ov{
+    display: block;
+}
+
+#cs-ov{
+    z-index: 2;
+}
+
+.force--consent .cc_div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100vw;
+    visibility: hidden;
+    transition: visibility .25s linear;
+}
+
+.force--consent.show--consent .c--anim .cc_div,
+.force--consent.show--settings .c--anim .cc_div{
+    visibility: visible;
+}
+
+.force--consent #cm{
+    position: absolute;
+}
+
+.force--consent #cm.bar{
+    width: 100vw;
+    max-width: 100vw;
+}
+
+html.force--consent.show--consent{
+    overflow-y: hidden!important;
+}
+
+html.force--consent.show--consent,
+html.force--consent.show--consent body{
+    height: auto!important;
+    overflow-x: hidden!important;
+}
+/** END BLOCK PAGE SCROLL */
+
+/** BEGIN ICONS **/
+.cc_div .b-bn .exp::before,
+.cc_div .act .b-bn .exp::before{
+    border: solid #2d4156;
+    border-color: var(--cc-btn-secondary-text);
+    border-width: 0 2px 2px 0;
+    padding: .2em;
+    display: inline-block;
+    position: absolute;
+    content: '';
+    margin-right: 15px;
+    position: absolute;
+    transform: translateY(-50%) rotate(45deg);
+    left: 1.2em;
+    top: 50%;
+}
+
+.cc_div .act .b-bn .b-tl::before{
+    transform: translateY(-20%) rotate(225deg);
+}
+
+.cc_div .on-i::before{
+    border: solid #fff;
+    border-color: var(--cc-toggle-knob-icon-color);
+    border-width: 0 2px 2px 0;
+    padding: .1em;
+    display: inline-block;
+    padding-bottom: .45em;
+    content: '';
+    margin: 0 auto;
+    transform: rotate(45deg);
+    top: .37em;
+    left: .75em;
+    position: absolute;
+}
+
+#s-c-bn::before,
+#s-c-bn::after{
+    content: '';
+    position: absolute;
+    left: .82em;
+    top: .58em;
+    height: .6em;
+    width: 1.5px;
+    background: #444d53;
+    background: var(--cc-btn-secondary-text);
+    transform: rotate(45deg);
+    border-radius: 1em;
+    margin: 0 auto;
+}
+
+#s-c-bn::after{
+    transform: rotate(-45deg);
+}
+
+.cc_div .off-i,
+.cc_div .on-i{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    display: block;
+    text-align: center;
+    transition: opacity .15s ease;
+}
+
+.cc_div .on-i{
+    left: 0;
+    opacity: 0;
+}
+
+.cc_div .off-i::before,
+.cc_div .off-i::after{
+    right: .8em;
+    top: .42em;
+    content: ' ';
+    height: .7em;
+    width: .09375em;
+    display: block;
+    background: #cdd6dc;
+    background: var(--cc-toggle-knob-icon-color);
+    margin: 0 auto;
+    position: absolute;
+    transform-origin: center;
+}
+
+.cc_div .off-i::before {
+    transform: rotate(45deg);
+}
+.cc_div .off-i::after {
+    transform: rotate(-45deg);
+}
+
+.cc_div .b-tg .c-tgl:checked ~ .c-tg .on-i{
+    opacity: 1;
+}
+.cc_div .b-tg .c-tgl:checked ~ .c-tg .off-i{
+    opacity: 0;
+}
+/** END ICONS **/
+
+#cm.box.middle,
+#cm.cloud.middle{
+    top: 50%;
+    transform: translateY(-37%);
+    bottom: auto;
+}
+
+#cm.box.middle.zoom,
+#cm.cloud.middle.zoom{
+    transform: scale(.95) translateY(-50%);
+}
+
+#cm.box.center{
+    left: 1em;
+    right: 1em;
+    margin: 0 auto;
+}
+
+/* Start cloud layout */
+#cm.cloud {
+    max-width: 50em;
+    margin: 0 auto;
+    text-align: center;
+    left: 1em;
+    right: 1em;
+    overflow: hidden;
+    padding: 1.3em 2em;
+    width: unset;
+}
+
+.cc_div .cloud #c-inr{
+    display: table;
+    width: 100%;
+}
+
+.cc_div .cloud #c-inr-i{
+    width: 70%;
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 2.4em;
+}
+
+.cc_div .cloud #c-txt{
+    font-size: 0.85em;
+}
+
+.cc_div .cloud #c-bns{
+    min-width: 170px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#cm.cloud .c-bn{
+    margin: .625em 0 0 0;
+    width: 100%;
+}
+
+#cm.cloud .c-bn:first-child{
+    margin: 0;
+}
+
+#cm.cloud.left{
+    margin-right: 1.25em;
+}
+
+#cm.cloud.right{
+    margin-left: 1.25em;
+}
+/* End cloud layout */
+
+/* Start bar layout */
+#cm.bar {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    padding: 2em;
+}
+
+#cm.bar #c-inr{
+    max-width: 32em;
+    margin: 0 auto;
+}
+
+#cm.bar #c-bns{
+    max-width: 33.75em;
+}
+
+#cm.bar #cs{
+    padding: 0;
+}
+
+.cc_div .bar #c-s-in{
+    top: 0;
+    transform: none;
+    height: 100%;
+    max-height: 100%;
+}
+
+.cc_div .bar #s-hdr,
+.cc_div .bar #s-bl,
+.cc_div .bar #s-bns {
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+}
+
+.cc_div .bar #cs{
+    padding: 0;
+}
+
+/* align bar to right by default */
+.cc_div .bar #s-inr{
+    margin: 0;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 0;
+    max-width: 32em;
+}
+
+.cc_div .bar.left #s-inr{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Force table to not be like tables anymore */
+.cc_div .bar #s-bl table, 
+.cc_div .bar #s-bl thead, 
+.cc_div .bar #s-bl tbody, 
+.cc_div .bar #s-bl th, 
+.cc_div .bar #s-bl td, 
+.cc_div .bar #s-bl tr,
+.cc_div .bar #s-cnt{ 
+    display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+.cc_div .bar #s-bl thead tr{ 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.cc_div .bar #s-bl tr{
+    border-top: 1px solid #e3e7ed;
+    border-color: var(--cc-cookie-table-border);
+}
+
+.cc_div .bar #s-bl td { 
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 35%; 
+}
+
+.cc_div .bar #s-bl td:before { 
+    position: absolute;
+    left: 1em;
+    padding-right: 0.625em;
+    white-space: nowrap;
+    content: attr(data-column);
+    color: #000;
+    color: var(--cc-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* End bar layout */
+
+/* Positions */
+#cm.top {
+    bottom: auto;
+    top: 1.250em;
+}
+
+#cm.left{
+    right: auto;
+    left: 1.250em;
+}
+
+#cm.right{
+    left: auto;
+    right: 1.250em;
+}
+
+#cm.bar.left,
+#cm.bar.right{
+    left: 0;
+    right: 0;
+}
+
+#cm.bar.top{
+    top: 0;
+}
+/* end positions */
+
+@media screen and (max-width: 688px) {
+
+    #cm,
+    #cm.cloud,
+    #cm.left,
+    #cm.right{
+        width: auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 1.4em!important;
+        right: 1em;
+        left: 1em;
+        bottom: 1em;
+        display: block;
+    }
+
+    .force--consent #cm,
+    .force--consent #cm.cloud{
+        width: auto;
+        max-width: 100vw;
+    }
+
+    #cm.top{
+        top: 1em;
+        bottom: auto;
+    }
+
+    #cm.bottom{
+        bottom: 1em;
+        top: auto;
+    }
+
+    #cm.bar.bottom{
+        bottom: 0;
+    }
+
+    #cm.cloud .c-bn{
+        font-size: .85em;
+    }
+
+    #s-bns,
+    .cc_div .bar #s-bns{
+        padding: 1em 1.3em;
+    }
+
+    .cc_div .bar #s-inr{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .cc_div .cloud #c-inr-i{
+        padding-right: 0;
+    }
+
+    #cs{
+        border-radius: 0;
+        padding: 0;
+    }
+
+    #c-s-in{
+        max-height: 100%;
+        height: 100%;
+        top: 0;
+        transform: none;
+    }
+
+    .cc_div .b-tg{
+        transform: scale(1.1);
+        right: 1.1em;
+    }
+
+    #s-inr{
+        margin: 0;
+        padding-bottom: 7.9em;
+        border-radius: 0;
+    }
+
+    #s-bns{
+        height: 7.9em;
+    }
+
+	#s-bl,
+    .cc_div .bar #s-bl{
+		padding: 1.3em;
+    }
+    
+	#s-hdr,
+    .cc_div .bar #s-hdr{
+        padding: 0 1.3em;
+    }
+
+    /** dynamic table layout **/
+    #s-bl table { 
+        width: 100%; 
+    }
+
+    #s-inr.bns-t{
+        padding-bottom: 10.5em;
+    }
+
+    .bns-t #s-bns{
+        height: 10.5em;
+    }
+
+    .cc_div .bns-t .c-bn{
+        font-size: 0.83em;
+        padding: .9em 1.6em;
+    }
+
+    #s-cnt .b-bn .b-tl{
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+    }
+
+    /* Force table to not be like tables anymore */
+    #s-bl table, 
+    #s-bl thead, 
+    #s-bl tbody, 
+    #s-bl th, 
+    #s-bl td, 
+    #s-bl tr,
+    #s-cnt{ 
+        display: block; 
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #s-bl thead tr{ 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #s-bl tr{
+        border-top: 1px solid #e3e7ed;
+        border-color: var(--cc-cookie-table-border);
+    }
+
+    #s-bl td { 
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 35%; 
+    }
+
+    #s-bl td:before { 
+        position: absolute;
+        left: 1em;
+        padding-right: 0.625em;
+        white-space: nowrap;
+        content: attr(data-column);
+        color: #000;
+        color: var(--cc-text);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #cm .c-bn,
+    .cc_div .c-bn{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #s-cnt #s-rall-bn{
+        margin-left: 0;
+    }
+
+    .cc_div #c-bns{
+        flex-direction: column;
+    }
+
+    #c-bns button + button,
+    #s-cnt button + button{
+        margin-top: 0.625em;
+        margin-left: 0;
+        float: unset;
+    }
+
+    #cm.cloud,
+    #cm.box{
+        left: 1em;
+        right: 1em;
+        width: auto;
+    }
+
+    #cm.cloud.right,
+    #cm.cloud.left{
+        margin: 0;
+    }
+
+    .cc_div .cloud #c-bns,
+    .cc_div .cloud #c-inr,
+    .cc_div .cloud #c-inr-i{
+        display: block;
+        width: auto;
+        min-width: unset;
+    }
+
+    .cc_div .cloud #c-txt{
+        font-size: .9em;
+    }
+
+    .cc_div .cloud #c-bns{
+        margin-top: 1.625em;
+    }
+}
+
+/* Begin IE fixes */
+.cc_div.ie #c-vln{
+	height: 100%;
+	padding-top: 5.62em;
+}
+
+.cc_div.ie .bar #c-vln{
+    padding-top: 0;
+}
+
+.cc_div.ie #cs{
+    max-height: 37.5em;
+    position: relative;
+	top: 0;
+	margin-top: -5.625em;
+}
+
+.cc_div.ie .bar #cs{
+    margin-top:0;
+    max-height: 100%;
+}
+
+.cc_div.ie #cm{
+    border: 1px solid #dee6e9;
+}
+
+.cc_div.ie #c-s-in{
+    top: 0;
+}
+
+.cc_div.ie .b-tg{
+	padding-left: 1em;
+	margin-bottom: 0.7em;
+}
+
+.cc_div.ie .b-tg .c-tgl:checked ~ .c-tg:after{
+    left: 1.95em;
+}
+
+.cc_div.ie #s-bl table{
+	overflow: auto;
+}
+
+.cc_div.ie .b-tg .c-tg{
+    display: none;
+}
+
+.cc_div.ie .b-tg .c-tgl{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.2em;
+    height: auto;
+}
+
+.cc_div.ie #s-cnt .b-bn .b-tl{
+    padding: 1.3em 6.4em 1.3em 1.4em
+}
+
+.cc_div.ie  .bar #s-bl td:before{
+    display: none;
+}
+
+.cc_div.ie .bar #s-bl td{
+    padding: 0.8em 0.625em 0.8em 1.2em;
+}
+
+.cc_div.ie .bar #s-bl thead tr{
+    position: relative;
+}
+
+.cc_div.ie .b-tg .t-lb{
+    filter: alpha(opacity=0);
+}
+
+.cc_div.ie #cm-ov,
+.cc_div.ie #cs-ov{
+    filter: alpha(opacity=80);
+}
+
+/** END IE FIXES **/</style></head>
+
+<body class="page-template page-template-page-templates page-template-page-product page-template-page-templatespage-product-php page page-id-5 page-parent template-global " data-template="base.twig">
+    <div class="siteWrapper">
+        <div class="sticky-header is-visible" style="transition: transform 0.5s ease 0s;">
+            <div class="sticky-header--wrapper" style="margin-top: 3px;">
+                <div class="sticky-header--logo">
+                    <a class="logo" href="#" title="Notre service">
+                        <img alt="Logo Notre service" src="images/logo.png">
+                    </a>
+                </div>
+                <div class="sticky-header--cta">
+                    
+                    <div class="cta__button button button--blue-dark button--block lazyLink" data-href="#" rel="nofollow" style="background: #bc2a2f;">
+                        <div class="button__label--short">
+                            Comparer
+                        </div>
+                        <div class="button__label--long">
+                            <a href="form.html">Comparer nos assurances Auto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------------------------------------- -->        
+
+<section id="home-hero" style="">
+            <div class="hero" style="background: #dedede;margin-top: 55px;">
+                <!-- -->
+                <div class="outerContainer">
+                    <div class="hero__primary">
+                        <hgroup class="hero__titles" style="color: black;">
+                            <h1 class="hero__title">
+                                <strong style="color: black;">Assurance Auto</strong>
+                                <p style="color: #bc2a2f;">Comparez et choisissez l'Assurance Auto la moins chère !</p>
+                            </h1>
+                            <ul class="list-check">
+                                <li>Des devis d'Assurance Auto en quelques minutes.</li>
+                                <li>Economisez sur vos contrats d'Assurance Auto dès aujourd'hui</li>
+                            </ul>
+                        </hgroup>
+                        <div class="cta__button button button--blue-dark button--large lazyLink" data-href="#" data-href-mobile="" data-cta-type="Hero" style="background: #bc2a2f;">
+                            <div class="label label--short">
+                                Comparer nos assurances Auto
+                            </div>
+                            <div class="label label--medium">
+                                <a href="form.html">Comparer nos assurances Auto</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="hero__secondary">
+                        <div class="hero__illu">
+                            <picture class="hero__picture-cover">
+                                <source data-lazy-srcset="" type="image/webp">
+                                <img class="hero__img-cover lazyloaded" alt="Assurance auto" src="images/hero_auto.jpg">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section id="home-business-arguments">
+            <div class="business-arguments" style="background: #bc2a2f;">
+                <div class="outerContainer">
+                    <article>
+                        <img alt="auto2" src="images/group-user.png" style="width: 67px;height: 67px;">
+                        <div>
+                            
+                            <div style="
+    margin-top: 14px;
+">
+                                <p>Nos clients et utilisateurs sont satisfaits de nos services</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <img alt="auto2" src="images/time.png" style="width: 67px;height: 67px;">
+                        <div>
+                            
+                            <div style="
+    margin-top: 14px;
+">
+                                <p>Votre contrat d'Assurance Auto en quelques clics seulement</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <img alt="auto2" src="images/Partenaires.png" style="width: 68px;height: 47px;margin-top: 7px;">
+                        <div>
+                            
+                            <div style="
+    margin-top: 14px;
+">
+                                <p>Des partenaires avec les meilleures offres d'Assurance Auto à votre service</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section id="home-testimonies-list" style="
+">
+            <div class="outerContainer">
+                <h2 class="title-primary title-primary--twoColors title-primary--centered">
+                    Comparez et économisez sur <strong>vos assurances</strong>
+                </h2>
+                <ul class="testimoniesList outerContainer">
+                    <li class="testimoniesList__item testimony">
+                        <article class="testimony__article">
+                            <div class="testimony__content">
+                                <h3 class="testimony__title">
+                                    <div class="testimony__icon">
+                                    </div>
+                                    <span style="color: #bc2a2f;">Comparez</span>
+                                </h3>
+                                <div class="testimony__desc">
+                                    Sur notre service, vous comparez les meilleures offres du marché, en quelques clics.
+                                    En toute impartialité, on vous aide à trouver l’assurance au meilleur prix, tout en
+                                    vous informant sur les garanties.
+                                </div>
+                            </div>
+                            <figure class="testimony__picture">
+                                <img alt="auto2" src="images/icon-comparateur.png" style="margin-top: -75px;width: 97px;">
+                            </figure>
+                            <div class="testimony__content">
+                                <h3 class="testimony__title">
+                                    <div class="testimony__icon">
+                                    </div>
+                                    <span style="color: #bc2a2f;">Souscrivez</span>
+                                </h3>
+                                <div class="testimony__desc">
+                                    Vous avez trouvé l’assurance qui vous convient ? À vous de choisir si vous souhaitez
+                                    <strong>directement souscrire en ligne</strong>, ou être appelé par l’assureur
+                                    choisi. Notre service est gratuit et sans engagement.
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+
+        <section style="
+    margin-top: 5%;
+">
+            <div class="ctaBanner" style="background: #dedede;">
+                <img class="ctaBanner__img lazyloaded" src="images/auto7.jpg" alt="" style="width: 619px;max-width: 600;">
+                <div class="ctaBanner__content">
+                    <div class="ctaBanner__text" style="
+    text-align: center;
+">Economisez sur votre contrat d'Assurance Auto !</div>
+                    <div class="button button--medium button--blueLight lazyLink" rel="nofollow" data-href="#" style="background: #bc2a2f;"><a href="form.html"> Essayez maintenant nos services de comparaison d'Assurance Auto</a></div>
+                </div>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section id="home-wysiwyg">
+            <div class="outerContainer">
+                <article class="wysiwyg">
+                    <div id="_mainwrapper">
+        <div id="app_content">
+            <div class="_max_width">
+                
+                
+                
+                <div id="api_section">
+                    
+                    <ul>
+                        
+                        <li><button class="styled_btn" id="btn5" type="button">Show cookie settings</button></li>
+                        
+                        
+                    </ul>
+                </div>
+                <div id="additional_section">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+                </article>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section id="home-wysiwyg">
+            <div class="outerContainer">
+                <article class="wysiwyg">
+                    <div class="part-2">
+                        <h2 style="color: #bc2a2f;">Nos engagements / Nos garanties</h2>
+                        <div class="schema-faq wp-block-yoast-faq-block">
+                            <div id="faq-question-1580376097039" class="schema-faq-section">
+                                
+                                <p class="schema-faq-answer">Devis d'Assurance Auto rapide, gratuit et sans aucun engagement</p><p class="schema-faq-answer">Un large éventail de choix des meilleurs prix du marché</p><p class="schema-faq-answer">Protection de vos données, vos informations personnelles sont confidentielles</p>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section id="home-wysiwyg">
+            <div class="outerContainer">
+                <article class="wysiwyg">
+                    <div class="part-2">
+                        <h2 style="color: #bc2a2f;">Comment ça marche ?</h2>
+                        <div class="schema-faq wp-block-yoast-faq-block">
+                            <div id="faq-question-1580376097039" class="schema-faq-section">
+                                <p></p>
+                                <p class="schema-faq-answer">Vous cliquez sur le bouton <strong><a href="#" style="
+    color: black !important;
+    border-bottom: 0px solid #2c1f92;
+">Comparer nos Assurances Auto</a></strong>, vous remplissez le formulaire, et puis ça y est, c'est fait !</p><p class="schema-faq-answer">Ou pour faire court, vous appelez le <strong>01 58 96 32 14</strong>, on s'occupe du reste !</p>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section style="margin-top: 74px;">
+            <div class="ctaBanner" style="background: #dedede;">
+                <img class="ctaBanner__img lazyloaded" src="images/auto6.jpg" alt="" style="width: 619px;max-width: 600;">
+                <div class="ctaBanner__content">
+                    <div class="ctaBanner__text">Besoin d'une Assurance Auto pas chère et fiable ?</div>
+                    <div class="button button--medium button--blueLight lazyLink" rel="nofollow" data-href="#" style="background: #bc2a2f;"><a href="form.html">Utiliser nos services de comparaison d'Assurance Auto</a></div>
+                </div>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section id="home-testimonies-list">
+            <div class="outerContainer">
+                <h2 class="title-primary title-primary--twoColors title-primary--centered">Avis clients sur notre
+                    assurances
+                    auto<strong></strong>
+                </h2>
+                <article class="testimony__article" style="
+">
+                    <div class="testimony__content">
+                        <h3 class="testimony__title" style=" text-align: center;">
+                            <div class="testimony__icon">
+                                <figure class="testimony__picture" style="width: 96px;">
+                                    <img alt="Avis_client" src="images/review-image-1.jpg" style="border-radius: 50% !important;border: 0px solid #e3e3e3 !important;display: block !important;width: 67px !important;">
+                                </figure>
+                            </div>
+                            <span>
+                                <div class="stars">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </span>
+                        </h3>
+                        <div class="testimony__desc">
+                            Rien a améliorer par rapport a mon interlocutrice qui a pris ma demande en compte rapidement
+                            et qui
+                            m'a donné toutes les explications que je demandais.
+<p style="
+    font-size: 15px;
+    font-weight: 600;
+">Michael.K 19/05/2021</p></div>
+                    </div>
+                    <div class="testimony__content">
+                        <h3 class="testimony__title" style="text-align: center;">
+                            <div class="testimony__icon">
+                                <figure class="testimony__picture" style="width: 96px;">
+                                    <img alt="Avis_client" src="images/review-image-2.jpg" style="border-radius: 50% !important;border: 0px solid #e3e3e3 !important;display: block !important;width: 67px !important;">
+                                </figure>
+                            </div>
+                            <span>
+                                <div class="stars">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </span>
+                        </h3>
+                        <div class="testimony__desc">Une qualité de service extraordinaire! merci pour l'écoute que vous
+                            apportez aux clients ainsi que votre professionnalisme.<p style="
+    font-size: 15px;
+    font-weight: 600;
+">Thomas.L 20/10/2021</p></div>
+                    </div>
+                </article>
+                <article class="testimony__article" style="margin-top: 6%;">
+                    <div class="testimony__content">
+                        <h3 class="testimony__title" style="text-align: center;">
+                            <div class="testimony__icon">
+                                <figure class="testimony__picture" style="width: 96px;">
+                                    <img alt="Avis_client" src="images/review-image-3.jpg" style="border-radius: 50% !important;border: 0px solid #e3e3e3 !important;display: block !important;width: 67px !important;">
+                                </figure>
+                            </div>
+                            <span>
+                                <div class="stars">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </span>
+                        </h3>
+                        <div class="testimony__desc">Accueil chaleureux, personnel compétent, à l'écoute et nous suivent
+                            le long
+                            des démarches. Je conseille fortement cette agence !<p style="
+    font-size: 15px;
+    font-weight: 600;
+">Alice.S 18/04/2021</p></div>
+                    </div>
+                    <div class="testimony__content">
+                        <h3 class="testimony__title" style="text-align: center;">
+                            <div class="testimony__icon">
+                                <figure class="testimony__picture" style="width: 96px;">
+                                    <img alt="Avis_client" src="images/review-image-1.jpg" style="border-radius: 50% !important;border: 0px solid #e3e3e3 !important;display: block !important;width: 67px !important;">
+                                </figure>
+                            </div>
+                            <span>
+                                <div class="stars">
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                    <div class="star"></div>
+                                </div>
+                            </span>
+                        </h3>
+                        <div class="testimony__desc">Rapidité d'exécution, Écoute et amabilité, Merci à vous c'est
+                            trèsagreable.<p style="
+    font-size: 15px;
+    font-weight: 600;
+">Dubois.M 14/03/2020</p></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section style="margin-top: 74px;">
+            <div class="ctaBanner" style="background-image: url(images/contrat.jpg);background-size: cover;background-position-y: 305px;height: 225px;">
+                <div class="ctaBanner__text" style="color: white;padding: 15px;">Le devis de votre Assurance Auto rapidement et sans engagement</div>
+                <div class="ctaBanner__content">
+
+                    <div class="button button--medium button--blueLight lazyLink" rel="nofollow" data-href="#" style="background: #bc2a2f;"><a href="form.html">Comparer nos assurances auto</a></div>
+                </div>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <section id="home-wysiwyg">
+            <div class="outerContainer">
+                <article class="wysiwyg">
+                    <div class="part-2">
+                        <h2 style="color: #bc2a2f;">Foire aux questions (FAQ)</h2>
+                        <div class="schema-faq wp-block-yoast-faq-block">
+                            <div id="faq-question-1580376097039" class="schema-faq-section">
+                                <p><strong class="schema-faq-question" style="">Pourquoi l'Assurance Auto est obligatoire ?                                        </strong></p>
+                                <p class="schema-faq-answer">La loi du 27 février 1958 dicte d'assurer tout véhicule à moteur, cela constitue une protection financière des automobilistes, en cas d'accident par exemple, l'assureur s'engage à indemniser les dégâts occasionnés à votre voiture ou à des tiers.</p>
+                            </div>
+                            <div id="faq-question-1580376157985" class="schema-faq-section">
+                                <p><strong class="schema-faq-question" style="">Comment résilier un contrat d'Assurance Auto ?                                        ?</strong></p>
+                                <p class="schema-faq-answer">Vous envoyez une lettre de résiliation à l'assureur, cette dernière ne prendra effet qu'après 1 mois de sa datte de réception.</p>
+                            </div>
+                            <div id="faq-question-1580376157985" class="schema-faq-section">
+                                <p><strong class="schema-faq-question" style="">Comment changer son Assurance Auto ?</strong></p>
+                                <p class="schema-faq-answer">Pour se faire il suffit juste de trouver une autre compagnie d'assurance sur notre site (en cliquant sur le bouton : Comparer nos assurances auto), c'est votre nouvel assureur qui va s'occuper du reste.</p>
+                            </div>
+                            <div id="faq-question-1580376157985" class="schema-faq-section">
+                                <p><strong class="schema-faq-question" style="">Quelle est la différence entre une Assurance Auto au Tiers et une Assurance Auto Tous Risques ?</strong>
+                                </p>
+                                <p class="schema-faq-answer">L’Assurance Auto au tiers est l'assurance minimum légale obligatoire. C'est aussi la formule la moins complète et par conséquent, la moins chère. Tandis que l'Assurance Auto tous risques est la formule la plus complète car en plus du minimum légal, elle contient des garanties supplémentaires.</p>
+                            </div>
+                            <div id="faq-question-1580376157985" class="schema-faq-section">
+                                <p><strong class="schema-faq-question" style="">Quelle est la démarche à effectuer en cas d'accident ?</strong></p>
+                                <p class="schema-faq-answer">Un constat (délivré par l'assureur) doit être rempli par toutes les personnes impliquées, et qui doit être transmis à l'assureur par la suite dans un délai de 5 jours ouvrables après l'accident.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<!-- -------------------------------------------------------------------------------------------------------- --> 
+
+        <footer class="mainFooter" style="background: #fafafa;border-top: 2px solid #bc2a2f;height: 302px;">
+            <div class="hero" style="background: #fafafa;">
+                <!-- -->
+                <div class="outerContainer">
+                    <div class="footer footer--primary" style="">
+                        <div style="width: 100%;text-align: center;"><img alt="Logo Notre service" src="images/logo.png" style="">
+                            <ul class="footer__linksList footer__linksList--icons" style="text-align: center;width: 100%;margin-left: 27px;">
+                                <li class="link--facebook" style="color: #38529a;"><span class="lazyLink" data-target="blank" data-href="https://www.facebook.com/">
+                                        <span class="icon"></span></span></li>
+                                <li class="link--linkedin" style="color: #0073b1;"><span class="lazyLink" data-target="blank" data-href="https://www.linkedin.com/">
+                                        <span class="icon"></span></span></li>
+                                <li class="link--twitter" style="color: #4da6e9;"><span class="lazyLink" data-target="blank" data-href="https://twitter.com/">
+                                        <span class="icon"></span></span></li>
+                                <li class="link--youtube"><span class="lazyLink" data-target="blank" data-href="https://www.youtube.com/">
+                                        <span class="icon" style="color: #f70000;"></span></span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+                    <div class="hero__secondary">
+                        <div class="hero__illu">
+                            <picture class="hero__picture-cover">
+                                <source data-lazy-srcset="" type="image/webp">
+                                <img class="hero__img-cover lazyloaded" alt="Assurance auto" src="images/auto9.jpg" style="height: 302px;margin-top: -60px;margin-left: 1px;">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    
+<script defer="" src="cookies/src/cookieconsent.js"></script>
+    <script defer="" src="cookies/app.js"></script>
+
+    
+
+<div id="cc--main" class="c--anim" style="position: fixed; z-index: 1000000;"><!--[if lt IE 9 ]><div id="cc_div" class="cc_div ie"></div><![endif]--><!--[if (gt IE 8)|!(IE)]><!--><div id="cc_div" class="cc_div"><div id="cm" role="dialog" aria-modal="true" aria-hidden="false" aria-labelledby="c-ttl" aria-describedby="c-txt" class="box bottom right slide" style="visibility: hidden;"><div id="c-inr"><div id="c-inr-i"><div id="c-ttl" role="heading" aria-level="2">🍪Le respect de votre vie privée est notre priorité</div><div id="c-txt">Notre site internet et les sociétés partenaires utilisent des cookies. Ces cookies nous permettent de personnaliser votre expérience utilisateur, mesurer l’audience, collecter des statistiques de visite pour l’optimisation de la publicité et l’amélioration des contenus. <br><br>Vous pouvez gérer vos préférences des cookies, accepter ou refuser le dépôt de l’ensemble des cookies. Un lien "Gérer mes cookies" sur notre site vous permet également de modifier vos choix à tout moment.<br><br><br> <button type="button" data-cc="c-settings" class="c-bn" aria-haspopup="dialog">Gérer mes préférences</button><br></div></div><div id="c-bns"><button type="button" id="c-p-bn" class="c-bn">Tout Accepter</button><button type="button" id="c-s-bn" class="c-bn c_link">Tout Refuser</button></div></div></div><div id="cm-ov" style="visibility: hidden; opacity: 0;"></div><div id="s-cnt" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="s-ttl" class="slide" style="visibility: hidden;"><div id="c-vln"><div id="cs"><div id="c-s-in"><div id="s-inr" class="bns-t"><div id="s-hdr"><div id="s-ttl" role="heading"><img alt="Logo Notre service" src="images/logo.png" style="width: 23%;margin-left: 41%;"></div><div id="s-c-bnc"><button type="button" id="s-c-bn" class="c-bn" aria-label="Close"></button></div></div><div id="s-bl"><div class="c-bl"><div class="title"><div class="b-tl" role="heading" aria-level="3">Gérer vos préférences relatives aux cookies sur le site Zénith assurance 📢</div></div><div class="desc"><div class="p">.</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-1">Réalisation de statistiques de visite et d’audience</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="analytics"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Réalisation de statistiques de visite et d’audience</span></label></div><div class="desc b-acc" id="c-ac-1" aria-hidden="true"><div class="p">Ces cookies nous permettent de réaliser des analyses statistiques de visites et d’audiences afin de mesurer l’attractivité du site et des services proposé</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-2">Optimisation des fonctionnalités et personnalisation des services «&nbsp;rajouter les boutons</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="ads"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Optimisation des fonctionnalités et personnalisation des services «&nbsp;rajouter les boutons</span></label></div><div class="desc b-acc" id="c-ac-2" aria-hidden="true"><div class="p">Ces cookies nous permettent de personnaliser le contenu de notre site afin d’améliorer votre expérience et d’optimiser votre navigation.</div><table><thead><tr><th scope="col">Name</th><th scope="col">Domain</th><th scope="col">Expiration</th><th scope="col">Description</th></tr></thead><tbody><tr><td data-column="Name">^_gcl_au</td><td data-column="Domain">google.com</td><td data-column="Expiration">2 years</td><td data-column="Description">description ...</td></tr><tr><td data-column="Name">_gid</td><td data-column="Domain">google.com</td><td data-column="Expiration">1 day</td><td data-column="Description">description ...</td></tr></tbody></table></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-3">Gestion de nos actions publicitaires personnalisée rajouter les boutons&nbsp;</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="targeting"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Gestion de nos actions publicitaires personnalisée rajouter les boutons&nbsp;</span></label></div><div class="desc b-acc" id="c-ac-3" aria-hidden="true"><div class="p">Gestion de nos actions publicitaires personnalisées «&nbsp;rajouter les boutons&nbsp;»</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-4">Partage sur les réseaux sociaux «&nbsp;rajouter les boutons&nbsp;»</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="targeting"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Partage sur les réseaux sociaux «&nbsp;rajouter les boutons&nbsp;»</span></label></div><div class="desc b-acc" id="c-ac-4" aria-hidden="true"><div class="p">Ces cookies déposés via les boutons réseaux sociaux ont pour finalité de permettre aux utilisateurs du site de faciliter le partage de contenu et d’améliorer la convivialité de notre Site.</div></div></div><div class="c-bl"><div class="title"><div class="b-tl" role="heading" aria-level="3">.</div></div><div class="desc"><div class="p">.</div></div></div></div><div id="s-bns"><button type="button" id="s-all-bn" class="c-bn">Accept all</button><button type="button" id="s-rall-bn" class="c-bn">Reject all</button><button type="button" id="s-sv-bn" class="c-bn">Save settings</button></div></div></div></div></div></div><div id="cs-ov" style="visibility: hidden; opacity: 0;"></div></div><!--<![endif]--></div><div id="cc--main" class="c--anim" style="position: fixed; z-index: 1000000;"><!--[if lt IE 9 ]><div id="cc_div" class="cc_div ie"></div><![endif]--><!--[if (gt IE 8)|!(IE)]><!--><div id="cc_div" class="cc_div"><div id="cm-ov" style="visibility: hidden; opacity: 0;"></div><div id="s-cnt" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="s-ttl" class="slide" style="visibility: hidden;"><div id="c-vln"><div id="cs"><div id="c-s-in"><div id="s-inr" class="bns-t"><div id="s-hdr"><div id="s-ttl" role="heading"><svg style="width: 110px; height: 30px; display: block;" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 337.6 72"><path fill="#737373" d="M140.4 14.4v43.2h-7.5V23.7h-.1l-13.4 33.9h-5l-13.7-33.9h-.1v33.9h-6.9V14.4h10.8l12.4 32h.2l13.1-32h10.2zm6.2 3.3c0-1.2.4-2.2 1.3-3 .9-.8 1.9-1.2 3.1-1.2 1.3 0 2.4.4 3.2 1.2s1.3 1.8 1.3 3-.4 2.2-1.3 3c-.9.8-1.9 1.2-3.2 1.2s-2.3-.4-3.1-1.2c-.8-.9-1.3-1.9-1.3-3zm8.1 8.9v31h-7.3v-31h7.3zm22.1 25.7c1.1 0 2.3-.2 3.6-.8 1.3-.5 2.5-1.2 3.6-2v6.8c-1.2.7-2.5 1.2-4 1.5-1.5.3-3.1.5-4.9.5-4.6 0-8.3-1.4-11.1-4.3-2.9-2.9-4.3-6.6-4.3-11 0-5 1.5-9.1 4.4-12.3 2.9-3.2 7-4.8 12.4-4.8 1.4 0 2.8.2 4.1.5 1.4.3 2.5.8 3.3 1.2v7c-1.1-.8-2.3-1.5-3.4-1.9-1.2-.4-2.4-.7-3.6-.7-2.9 0-5.2.9-7 2.8s-2.6 4.4-2.6 7.6c0 3.1.9 5.6 2.6 7.3 1.7 1.7 4 2.6 6.9 2.6zm27.9-26.2a8.08 8.08 0 0 1 2.8.4v7.4c-.4-.3-.9-.6-1.7-.8s-1.6-.4-2.7-.4c-1.8 0-3.3.8-4.5 2.3s-1.9 3.8-1.9 7v15.6h-7.3v-31h7.3v4.9h.1c.7-1.7 1.7-3 3-4 1.4-.9 3-1.4 4.9-1.4zm3.2 16.5c0-5.1 1.5-9.2 4.3-12.2 2.9-3 6.9-4.5 12-4.5 4.8 0 8.6 1.4 11.3 4.3s4.1 6.8 4.1 11.7c0 5-1.5 9-4.3 12-2.9 3-6.8 4.5-11.8 4.5-4.8 0-8.6-1.4-11.4-4.2-2.8-2.9-4.2-6.8-4.2-11.6zm7.6-.3c0 3.2.7 5.7 2.2 7.4s3.6 2.6 6.3 2.6c2.6 0 4.7-.8 6.1-2.6 1.4-1.7 2.1-4.2 2.1-7.6 0-3.3-.7-5.8-2.1-7.6-1.4-1.7-3.5-2.6-6-2.6-2.7 0-4.7.9-6.2 2.7-1.7 1.9-2.4 4.4-2.4 7.7zm35-7.5c0 1 .3 1.9 1 2.5.7.6 2.1 1.3 4.4 2.2 2.9 1.2 5 2.5 6.1 3.9a8.1 8.1 0 0 1 1.8 5.3c0 2.9-1.1 5.2-3.4 7-2.2 1.8-5.3 2.6-9.1 2.6-1.3 0-2.7-.2-4.3-.5-1.6-.3-2.9-.7-4-1.2v-7.2c1.3.9 2.8 1.7 4.3 2.2 1.5.5 2.9.8 4.2.8 1.6 0 2.9-.2 3.6-.7.8-.5 1.2-1.2 1.2-2.3 0-1-.4-1.8-1.2-2.6-.8-.7-2.4-1.5-4.6-2.4-2.7-1.1-4.6-2.4-5.7-3.8s-1.7-3.2-1.7-5.4c0-2.8 1.1-5.1 3.3-6.9 2.2-1.8 5.1-2.7 8.6-2.7 1.1 0 2.3.1 3.6.4s2.5.6 3.4.9V34c-1-.6-2.1-1.2-3.4-1.7-1.3-.5-2.6-.7-3.8-.7-1.4 0-2.5.3-3.2.8-.7.7-1.1 1.4-1.1 2.4zm16.4 7.8c0-5.1 1.5-9.2 4.3-12.2 2.9-3 6.9-4.5 12-4.5 4.8 0 8.6 1.4 11.3 4.3s4.1 6.8 4.1 11.7c0 5-1.5 9-4.3 12-2.9 3-6.8 4.5-11.8 4.5-4.8 0-8.6-1.4-11.4-4.2-2.7-2.9-4.2-6.8-4.2-11.6zm7.6-.3c0 3.2.7 5.7 2.2 7.4s3.6 2.6 6.3 2.6c2.6 0 4.7-.8 6.1-2.6 1.4-1.7 2.1-4.2 2.1-7.6 0-3.3-.7-5.8-2.1-7.6-1.4-1.7-3.5-2.6-6-2.6-2.7 0-4.7.9-6.2 2.7-1.6 1.9-2.4 4.4-2.4 7.7zm48.4-9.7H312v25h-7.4v-25h-5.2v-6h5.2v-4.3c0-3.2 1.1-5.9 3.2-8s4.8-3.1 8.1-3.1c.9 0 1.7.1 2.4.1s1.3.2 1.8.4V18c-.2-.1-.7-.3-1.3-.5-.6-.2-1.3-.3-2.1-.3-1.5 0-2.7.5-3.5 1.4-.8.9-1.2 2.4-1.2 4.2v3.7h10.9v-7l7.3-2.2v9.2h7.4v6h-7.4V47c0 1.9.4 3.2 1 4 .7.8 1.8 1.2 3.3 1.2.4 0 .9-.1 1.5-.3.6-.2 1.1-.4 1.5-.7v6c-.5.3-1.2.5-2.3.7-1.1.2-2.1.3-3.2.3-3.1 0-5.4-.8-6.9-2.4-1.5-1.6-2.3-4.1-2.3-7.4l.1-15.8z"></path><path fill="#f25022" d="M0 0h34.2v34.2H0z"></path><path fill="#7fba00" d="M37.8 0H72v34.2H37.8z"></path><path fill="#00a4ef" d="M0 37.8h34.2V72H0z"></path><path fill="#ffb900" d="M37.8 37.8H72V72H37.8z"></path></svg></div><div id="s-c-bnc"><button type="button" id="s-c-bn" class="c-bn" aria-label="Close"></button></div></div><div id="s-bl"><div class="c-bl"><div class="title"><div class="b-tl" role="heading" aria-level="3">Gérer vos préférences relatives aux cookies sur le site Zénith assurance 📢</div></div><div class="desc"><div class="p">.</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-1">Réalisation de statistiques de visite et d’audience</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="necessary" disabled=""><span class="c-tg c-ro" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Réalisation de statistiques de visite et d’audience</span></label></div><div class="desc b-acc" id="c-ac-1" aria-hidden="true"><div class="p">Ces cookies nous permettent de réaliser des analyses statistiques de visites et d’audiences afin de mesurer l’attractivité du site et des services proposé</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-2">Optimisation des fonctionnalités et personnalisation des services «&nbsp;rajouter les boutons</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="ads"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Optimisation des fonctionnalités et personnalisation des services «&nbsp;rajouter les boutons</span></label></div><div class="desc b-acc" id="c-ac-2" aria-hidden="true"><div class="p">Ces cookies nous permettent de personnaliser le contenu de notre site afin d’améliorer votre expérience et d’optimiser votre navigation.</div><table><thead><tr><th scope="col">Name</th><th scope="col">Domain</th><th scope="col">Expiration</th><th scope="col">Description</th></tr></thead><tbody><tr><td data-column="Name">^_gcl_au</td><td data-column="Domain">google.com</td><td data-column="Expiration">2 years</td><td data-column="Description">description ...</td></tr><tr><td data-column="Name">_gid</td><td data-column="Domain">google.com</td><td data-column="Expiration">1 day</td><td data-column="Description">description ...</td></tr></tbody></table></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-3">Gestion de nos actions publicitaires personnalisée rajouter les boutons&nbsp;</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="targeting"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Gestion de nos actions publicitaires personnalisée rajouter les boutons&nbsp;</span></label></div><div class="desc b-acc" id="c-ac-3" aria-hidden="true"><div class="p">Gestion de nos actions publicitaires personnalisées «&nbsp;rajouter les boutons&nbsp;»</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-4">Partage sur les réseaux sociaux «&nbsp;rajouter les boutons&nbsp;»</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="targeting"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Partage sur les réseaux sociaux «&nbsp;rajouter les boutons&nbsp;»</span></label></div><div class="desc b-acc" id="c-ac-4" aria-hidden="true"><div class="p">Ces cookies déposés via les boutons réseaux sociaux ont pour finalité de permettre aux utilisateurs du site de faciliter le partage de contenu et d’améliorer la convivialité de notre Site.</div></div></div><div class="c-bl"><div class="title"><div class="b-tl" role="heading" aria-level="3">.</div></div><div class="desc"><div class="p">.</div></div></div></div><div id="s-bns"><button type="button" id="s-all-bn" class="c-bn">Accept all</button><button type="button" id="s-rall-bn" class="c-bn">Reject all</button><button type="button" id="s-sv-bn" class="c-bn">Save settings</button></div></div></div></div></div></div><div id="cs-ov" style="visibility: hidden; opacity: 0;"></div></div><!--<![endif]--></div><div id="cc--main" class="c--anim" style="position: fixed; z-index: 1000000;"><!--[if lt IE 9 ]><div id="cc_div" class="cc_div ie"></div><![endif]--><!--[if (gt IE 8)|!(IE)]><!--><div id="cc_div" class="cc_div"><div id="cm-ov" style="visibility: hidden; opacity: 0;"></div><div id="s-cnt" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="s-ttl" class="slide" style="visibility: hidden;"><div id="c-vln"><div id="cs"><div id="c-s-in"><div id="s-inr" class="bns-t"><div id="s-hdr"><div id="s-ttl" role="heading"><svg style="width: 110px; height: 30px; display: block;" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 337.6 72"><path fill="#737373" d="M140.4 14.4v43.2h-7.5V23.7h-.1l-13.4 33.9h-5l-13.7-33.9h-.1v33.9h-6.9V14.4h10.8l12.4 32h.2l13.1-32h10.2zm6.2 3.3c0-1.2.4-2.2 1.3-3 .9-.8 1.9-1.2 3.1-1.2 1.3 0 2.4.4 3.2 1.2s1.3 1.8 1.3 3-.4 2.2-1.3 3c-.9.8-1.9 1.2-3.2 1.2s-2.3-.4-3.1-1.2c-.8-.9-1.3-1.9-1.3-3zm8.1 8.9v31h-7.3v-31h7.3zm22.1 25.7c1.1 0 2.3-.2 3.6-.8 1.3-.5 2.5-1.2 3.6-2v6.8c-1.2.7-2.5 1.2-4 1.5-1.5.3-3.1.5-4.9.5-4.6 0-8.3-1.4-11.1-4.3-2.9-2.9-4.3-6.6-4.3-11 0-5 1.5-9.1 4.4-12.3 2.9-3.2 7-4.8 12.4-4.8 1.4 0 2.8.2 4.1.5 1.4.3 2.5.8 3.3 1.2v7c-1.1-.8-2.3-1.5-3.4-1.9-1.2-.4-2.4-.7-3.6-.7-2.9 0-5.2.9-7 2.8s-2.6 4.4-2.6 7.6c0 3.1.9 5.6 2.6 7.3 1.7 1.7 4 2.6 6.9 2.6zm27.9-26.2a8.08 8.08 0 0 1 2.8.4v7.4c-.4-.3-.9-.6-1.7-.8s-1.6-.4-2.7-.4c-1.8 0-3.3.8-4.5 2.3s-1.9 3.8-1.9 7v15.6h-7.3v-31h7.3v4.9h.1c.7-1.7 1.7-3 3-4 1.4-.9 3-1.4 4.9-1.4zm3.2 16.5c0-5.1 1.5-9.2 4.3-12.2 2.9-3 6.9-4.5 12-4.5 4.8 0 8.6 1.4 11.3 4.3s4.1 6.8 4.1 11.7c0 5-1.5 9-4.3 12-2.9 3-6.8 4.5-11.8 4.5-4.8 0-8.6-1.4-11.4-4.2-2.8-2.9-4.2-6.8-4.2-11.6zm7.6-.3c0 3.2.7 5.7 2.2 7.4s3.6 2.6 6.3 2.6c2.6 0 4.7-.8 6.1-2.6 1.4-1.7 2.1-4.2 2.1-7.6 0-3.3-.7-5.8-2.1-7.6-1.4-1.7-3.5-2.6-6-2.6-2.7 0-4.7.9-6.2 2.7-1.7 1.9-2.4 4.4-2.4 7.7zm35-7.5c0 1 .3 1.9 1 2.5.7.6 2.1 1.3 4.4 2.2 2.9 1.2 5 2.5 6.1 3.9a8.1 8.1 0 0 1 1.8 5.3c0 2.9-1.1 5.2-3.4 7-2.2 1.8-5.3 2.6-9.1 2.6-1.3 0-2.7-.2-4.3-.5-1.6-.3-2.9-.7-4-1.2v-7.2c1.3.9 2.8 1.7 4.3 2.2 1.5.5 2.9.8 4.2.8 1.6 0 2.9-.2 3.6-.7.8-.5 1.2-1.2 1.2-2.3 0-1-.4-1.8-1.2-2.6-.8-.7-2.4-1.5-4.6-2.4-2.7-1.1-4.6-2.4-5.7-3.8s-1.7-3.2-1.7-5.4c0-2.8 1.1-5.1 3.3-6.9 2.2-1.8 5.1-2.7 8.6-2.7 1.1 0 2.3.1 3.6.4s2.5.6 3.4.9V34c-1-.6-2.1-1.2-3.4-1.7-1.3-.5-2.6-.7-3.8-.7-1.4 0-2.5.3-3.2.8-.7.7-1.1 1.4-1.1 2.4zm16.4 7.8c0-5.1 1.5-9.2 4.3-12.2 2.9-3 6.9-4.5 12-4.5 4.8 0 8.6 1.4 11.3 4.3s4.1 6.8 4.1 11.7c0 5-1.5 9-4.3 12-2.9 3-6.8 4.5-11.8 4.5-4.8 0-8.6-1.4-11.4-4.2-2.7-2.9-4.2-6.8-4.2-11.6zm7.6-.3c0 3.2.7 5.7 2.2 7.4s3.6 2.6 6.3 2.6c2.6 0 4.7-.8 6.1-2.6 1.4-1.7 2.1-4.2 2.1-7.6 0-3.3-.7-5.8-2.1-7.6-1.4-1.7-3.5-2.6-6-2.6-2.7 0-4.7.9-6.2 2.7-1.6 1.9-2.4 4.4-2.4 7.7zm48.4-9.7H312v25h-7.4v-25h-5.2v-6h5.2v-4.3c0-3.2 1.1-5.9 3.2-8s4.8-3.1 8.1-3.1c.9 0 1.7.1 2.4.1s1.3.2 1.8.4V18c-.2-.1-.7-.3-1.3-.5-.6-.2-1.3-.3-2.1-.3-1.5 0-2.7.5-3.5 1.4-.8.9-1.2 2.4-1.2 4.2v3.7h10.9v-7l7.3-2.2v9.2h7.4v6h-7.4V47c0 1.9.4 3.2 1 4 .7.8 1.8 1.2 3.3 1.2.4 0 .9-.1 1.5-.3.6-.2 1.1-.4 1.5-.7v6c-.5.3-1.2.5-2.3.7-1.1.2-2.1.3-3.2.3-3.1 0-5.4-.8-6.9-2.4-1.5-1.6-2.3-4.1-2.3-7.4l.1-15.8z"></path><path fill="#f25022" d="M0 0h34.2v34.2H0z"></path><path fill="#7fba00" d="M37.8 0H72v34.2H37.8z"></path><path fill="#00a4ef" d="M0 37.8h34.2V72H0z"></path><path fill="#ffb900" d="M37.8 37.8H72V72H37.8z"></path></svg></div><div id="s-c-bnc"><button type="button" id="s-c-bn" class="c-bn" aria-label="Close"></button></div></div><div id="s-bl"><div class="c-bl"><div class="title"><div class="b-tl" role="heading" aria-level="3">Gérer vos préférences relatives aux cookies sur le site Zénith assurance 📢</div></div><div class="desc"><div class="p">.</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-1">Réalisation de statistiques de visite et d’audience</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="necessary" disabled=""><span class="c-tg c-ro" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Réalisation de statistiques de visite et d’audience</span></label></div><div class="desc b-acc" id="c-ac-1" aria-hidden="true"><div class="p">Ces cookies nous permettent de réaliser des analyses statistiques de visites et d’audiences afin de mesurer l’attractivité du site et des services proposé</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-2">Optimisation des fonctionnalités et personnalisation des services «&nbsp;rajouter les boutons</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="ads"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Optimisation des fonctionnalités et personnalisation des services «&nbsp;rajouter les boutons</span></label></div><div class="desc b-acc" id="c-ac-2" aria-hidden="true"><div class="p">Ces cookies nous permettent de personnaliser le contenu de notre site afin d’améliorer votre expérience et d’optimiser votre navigation.</div><table><thead><tr><th scope="col">Name</th><th scope="col">Domain</th><th scope="col">Expiration</th><th scope="col">Description</th></tr></thead><tbody><tr><td data-column="Name">^_gcl_au</td><td data-column="Domain">google.com</td><td data-column="Expiration">2 years</td><td data-column="Description">description ...</td></tr><tr><td data-column="Name">_gid</td><td data-column="Domain">google.com</td><td data-column="Expiration">1 day</td><td data-column="Description">description ...</td></tr></tbody></table></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-3">Gestion de nos actions publicitaires personnalisée rajouter les boutons&nbsp;</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="targeting"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Gestion de nos actions publicitaires personnalisée rajouter les boutons&nbsp;</span></label></div><div class="desc b-acc" id="c-ac-3" aria-hidden="true"><div class="p">Gestion de nos actions publicitaires personnalisées «&nbsp;rajouter les boutons&nbsp;»</div></div></div><div class="c-bl b-ex"><div class="title b-bn"><button type="button" class="b-tl exp" aria-expanded="false" aria-controls="c-ac-4">Partage sur les réseaux sociaux «&nbsp;rajouter les boutons&nbsp;»</button><label class="b-tg"><input class="c-tgl" type="checkbox" value="targeting"><span class="c-tg" aria-hidden="true"><span class="on-i"></span><span class="off-i"></span></span><span class="t-lb">Partage sur les réseaux sociaux «&nbsp;rajouter les boutons&nbsp;»</span></label></div><div class="desc b-acc" id="c-ac-4" aria-hidden="true"><div class="p">Ces cookies déposés via les boutons réseaux sociaux ont pour finalité de permettre aux utilisateurs du site de faciliter le partage de contenu et d’améliorer la convivialité de notre Site.</div></div></div><div class="c-bl"><div class="title"><div class="b-tl" role="heading" aria-level="3">.</div></div><div class="desc"><div class="p">.</div></div></div></div><div id="s-bns"><button type="button" id="s-all-bn" class="c-bn">Accept all</button><button type="button" id="s-rall-bn" class="c-bn">Reject all</button><button type="button" id="s-sv-bn" class="c-bn">Save settings</button></div></div></div></div></div></div><div id="cs-ov" style="visibility: hidden; opacity: 0;"></div></div><!--<![endif]--></div></body></html>
